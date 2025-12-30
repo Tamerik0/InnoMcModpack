@@ -1,0 +1,16 @@
+filename = 'create_magics-2.0.0-1.20.1.jar'
+name = 'Create: Magics'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '05567f617ebf46c87bc74e7341c4e113602e537eb4f8fcafdaf93691b98621453bcba90787dd299aac4a036a6af89f8f09c8b00659d56eea651ab6d308b3c5ab'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8x58x3u8/versions/YBBzbTEx/create_magics-2.0.0-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '8x58x3u8'
+version = 'YBBzbTEx'

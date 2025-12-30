@@ -1,0 +1,355 @@
+---- Minecraft Crash Report ----
+// Embeddium instance tainted by mods: [entity_texture_features, sodiumoptionsapi, valkyrienskies, oculus]
+// Please do not reach out for Embeddium support without removing these mods first.
+// -------
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2025-12-30 23:01:21
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:60) ~[forge-1.20.1-47.4.10-universal.jar%23361!/:?] {re:mixin,re:classloading,pl:mixin:APP:embeddium.mixins.json:core.CrashReportExtenderMixin,pl:mixin:A}
+	at net.minecraftforge.client.loading.ClientModLoader.completeModLoading(ClientModLoader.java:135) ~[forge-1.20.1-47.4.10-universal.jar%23361!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$new$4(Minecraft.java:571) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.Util.m_137521_(Util.java:421) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-common.mixins.json:perf.thread_priorities.UtilMixin,pl:mixin:APP:DistantHorizons.forge.mixins.json:server.MixinUtilBackgroundThread,pl:mixin:APP:reterraforged-common.mixins.json:MixinUtil,pl:mixin:APP:c2me_opts_allocs.mixins.json:MixinUtil,pl:mixin:A}
+	at net.minecraft.client.Minecraft.lambda$new$5(Minecraft.java:564) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.LoadingOverlay.m_88315_(LoadingOverlay.java:138) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:dynamic_fps-common.mixins.json:LoadingOverlayMixin,pl:mixin:APP:fancymenu.mixins.json:client.MixinLoadingOverlay,pl:mixin:APP:rrls.mixins.json:LoadingOverlayMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ForgeLoadingOverlay.handler$fkn000$rrls$render(ForgeLoadingOverlay.java:1068) ~[forge-1.20.1-47.4.10-universal.jar%23361!/:?] {re:classloading,re:mixin,pl:mixin:A}
+	at net.minecraftforge.client.loading.ForgeLoadingOverlay.m_88315_(ForgeLoadingOverlay.java) ~[forge-1.20.1-47.4.10-universal.jar%23361!/:?] {re:classloading,re:mixin,pl:mixin:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:954) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fdbosses.mixins.json:GameRendererMixin,pl:mixin:APP:waves.mixins.json:client.GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer,pl:mixin:APP:mixins.oculus.json:MixinModelViewBobbing,pl:mixin:APP:dynamic_fps-common.mixins.json:GameRendererMixin,pl:mixin:APP:fdlib.mixins.json:GameRendererMixin,pl:mixin:APP:ponder-common.mixins.json:client.accessor.GameRendererAccessor,pl:mixin:APP:zeta_forge.mixins.json:client.GameRenderMixin,pl:mixin:APP:valkyrienskies-common.mixins.json:client.renderer.MixinGameRenderer,pl:mixin:APP:railways-common.mixins.json:conductor_possession.MixinGameRenderer,pl:mixin:APP:entity_model_features.mixins.json:MixinGameRenderer,pl:mixin:APP:entity_model_features.mixins.json:accessor.Mixin_GuiEntityTester,pl:mixin:APP:fancymenu.mixins.json:client.MixinGameRenderer,pl:mixin:APP:fancymenu.forge.mixins.json:client.MixinForgeGameRenderer,pl:mixin:APP:rrls.mixins.json:compat.GameRendererMixin,pl:mixin:APP:rrls.mixins.json:compat.RendererKeyboardMouseMixin,pl:mixin:APP:create.mixins.json:client.GameRendererMixin,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer_NightVisionCompat,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23356!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:105) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod: 
+	Remove Reloading Screen (rrls), Version: 4.0.6.1+mc1.20.1-forge
+		Issue tracker URL: https://github.com/dima-dencep/rrls/issues
+		Mixin class: org.redlance.dima_dencep.mods.rrls.forge.mixins.NeoForgeLoadingOverlayMixin
+		Target: net.minecraftforge.client.loading.ForgeLoadingOverlay
+		at TRANSFORMER/forge@47.4.10/net.minecraftforge.client.loading.ForgeLoadingOverlay.handler$fkn000$rrls$render(ForgeLoadingOverlay.java:1068)
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+[MixinTraceReforged] Mixins in Stack Trace: None found
+-- MOD apotheosis_balance --
+Details:
+	Caused by 0: java.lang.NoClassDefFoundError: dev/shadowsoffire/placebo/reload/DynamicHolder
+		at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?] {re:mixin}
+		at java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?] {re:mixin}
+		at java.lang.Class.privateGetPublicMethods(Class.java:3427) ~[?:?] {re:mixin}
+		at java.lang.Class.getMethods(Class.java:2019) ~[?:?] {re:mixin}
+		at net.minecraftforge.eventbus.EventBus.registerClass(EventBus.java:83) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.register(EventBus.java:126) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:61) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+		at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:48) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:92) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.10.jar%23357!/:?] {re:mixin}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {re:mixin}
+
+	Mod File: /C:/Users/Tamerlan/AppData/Roaming/PrismLauncher/instances/InnoCbopka/minecraft/mods/apotheosis_balance-1.1.3.jar
+	Failure message: Apotheosis Balance Configurator (apotheosis_balance) has failed to load correctly
+		java.lang.NoClassDefFoundError: dev/shadowsoffire/placebo/reload/DynamicHolder
+	Mod Version: 1.1.3
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ClassNotFoundException: dev.shadowsoffire.placebo.reload.DynamicHolder
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?] {re:mixin}
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[?:?] {re:mixin}
+	at java.lang.Class.privateGetPublicMethods(Class.java:3427) ~[?:?] {re:mixin}
+	at java.lang.Class.getMethods(Class.java:2019) ~[?:?] {re:mixin}
+	at net.minecraftforge.eventbus.EventBus.registerClass(EventBus.java:83) ~[eventbus-6.0.5.jar%23137!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:126) ~[eventbus-6.0.5.jar%23137!/:?] {}
+	at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:61) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:48) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:92) ~[javafmllanguage-1.20.1-47.4.10.jar%23358!/:?] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.10.jar%23357!/:?] {re:mixin}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:mixin,re:computing_frames}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:mixin,re:computing_frames}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {re:mixin}
+
+[MixinTraceReforged] Mixins in Stack Trace: None found
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.15, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 359845648 bytes (343 MiB) / 1686110208 bytes (1608 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 20
+	Processor Vendor: GenuineIntel
+	Processor Name: 13th Gen Intel(R) Core(TM) i7-13700H
+	Identifier: Intel64 Family 6 Model 186 Stepping 2
+	Microarchitecture: unknown
+	Frequency (GHz): 2.92
+	Number of physical packages: 1
+	Number of physical CPUs: 14
+	Number of logical CPUs: 20
+	Graphics card #0 name: NVIDIA GeForce RTX 4060 Laptop GPU
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x28a0
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.8160
+	Graphics card #1 name: Intel(R) Iris(R) Xe Graphics
+	Graphics card #1 vendor: Intel Corporation (0x8086)
+	Graphics card #1 VRAM (MB): 1024.00
+	Graphics card #1 deviceId: 0xa7a0
+	Graphics card #1 versionInfo: DriverVersion=31.0.101.4502
+	Memory slot #0 capacity (MB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 43694.24
+	Virtual memory used (MB): 22289.41
+	Swap memory total (MB): 3072.00
+	Swap memory used (MB): 251.02
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx4096m
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.12.0
+		javafml@null
+		__fabric_loader_bootstrap@2.6.0+0.15.0+1.20.1
+		lowcodefml@null
+	Mod List: 
+		c2meF-fixes-worldgen-threading-issues-mc1.20.1-0.2|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		almanac-1.20.x-forge-1.0.2.jar                    |Almanac                       |almanac                       |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-rewrites-chunk-serializer-mc1.20.1-0.2.0+alp|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.0.28+4ac5e37a77.jar  |Fabric Rendering Fluids (v1)  |fabric_rendering_fluids_v1    |3.0.28+4ac5e37a77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-models-v0-0.4.2+7c3892a477.jar             |Fabric Models (v0)            |fabric_models_v0              |0.4.2+7c3892a477    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-general-threading-issues-mc1.20.1-0.2.|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-1.5.5+fa3d1c0177.jar    |Fabric Convention Tags        |fabric_convention_tags_v1     |1.5.5+fa3d1c0177    |COMMON_SET|Manifest: NOSIGNATURE
+		CTM-1.20.1-1.1.10.jar                             |ConnectedTexturesMod          |ctm                           |1.20.1-1.1.10       |COMMON_SET|Manifest: NOSIGNATURE
+		modernfix-forge-5.25.2+mc1.20.1.jar               |ModernFix                     |modernfix                     |5.25.2+mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v1-1.2.34+f71b366f77.jar       |Fabric Command API (v1)       |fabric_command_api_v1         |1.2.34+f71b366f77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.1+0767707077.jar     |Fabric BlockView API (v2)     |fabric_block_view_api_v2      |1.0.1+0767707077    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.13+561530ec77.jar       |Fabric Command API (v2)       |fabric_command_api_v2         |2.2.13+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		YungsApi-1.20-Forge-4.0.6.jar                     |YUNG's API                    |yungsapi                      |1.20-Forge-4.0.6    |COMMON_SET|Manifest: NOSIGNATURE
+		dmnr-3.2.6.jar                                    |Dragon Magic and Relics       |dmnr                          |3.2.6               |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-0.2.0+alpha.12-all.jar                      |Concurrent Chunk Management En|c2me                          |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fdbosses-2.0.8-1.20.1.jar                         |Qliphoth Awakening            |fdbosses                      |2.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.37-all.jar                  |Balm                          |balm                          |7.3.37              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.8+45a670a577.jar         |Fabric Screen API (v1)        |fabric_screen_api_v1          |2.0.8+45a670a577    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-base-mc1.20.1-0.2.0+alpha.12.jar            |Concurrent Chunk Management En|c2me_base                     |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar  |YUNG's Better Nether Fortresse|betterfortresses              |1.20-Forge-2.0.6    |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |COMMON_SET|Manifest: NOSIGNATURE
+		sound-physics-remastered-forge-1.20.1-1.5.1.jar   |Sound Physics Remastered      |sound_physics_remastered      |1.20.1-1.5.1        |COMMON_SET|Manifest: NOSIGNATURE
+		embeddium-0.3.31+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.31+mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		mna_attrib_apoth-0.5-1.20.1.jar                   |Mana and Artifice Apotheosis C|mna_attrib_apoth              |0.5-1.20.1          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.40+683d4da877.jar     |Fabric Game Rule API (v1)     |fabric_game_rule_api_v1       |1.0.40+683d4da877   |COMMON_SET|Manifest: NOSIGNATURE
+		improved-village-placement-1.1.1.jar              |Improved Village Placement    |improved_village_placement    |1.1.2               |COMMON_SET|Manifest: NOSIGNATURE
+		resourcefulconfig-forge-1.20.1-2.1.3.jar          |Resourcefulconfig             |resourcefulconfig             |2.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		spark-1.10.53-forge.jar                           |spark                         |spark                         |1.10.53             |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		oculus-mc1.20.1-1.8.0.jar                         |Oculus                        |oculus                        |1.8.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.0+4ca7515277.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.0+4ca7515277    |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumoptionsmodcompat-forge-1.0.0-1.20.1.jar     |Sodium Options Mod Compat     |sodiumoptionsmodcompat        |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		conditional-mixin-forge-0.6.4.jar                 |conditional mixin             |conditional_mixin             |0.6.4               |COMMON_SET|Manifest: NOSIGNATURE
+		TRansition-1.0.11-1.20.1-forge-SNAPSHOT.jar       |TRansition                    |transition                    |1.0.11              |COMMON_SET|Manifest: NOSIGNATURE
+		flib-1.20.1-0.0.14.jar                            |flib                          |flib                          |0.0.14              |COMMON_SET|Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		dynamic-fps-3.9.5+minecraft-1.20.0-forge.jar      |Dynamic FPS                   |dynamic_fps                   |3.9.5               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.37+a6081af|Fabric Rendering Data Attachme|fabric_rendering_data_attachme|0.3.37+a6081afc77   |COMMON_SET|Manifest: NOSIGNATURE
+		sparsestructures-forge-1.20.1-3.0.jar             |SparseStructures              |sparsestructures              |3.0                 |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterJungleTemples-1.20-Forge-2.0.5.jar     |YUNG's Better Jungle Temples  |betterjungletemples           |1.20-Forge-2.0.5    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.2+5d6761b877.jar    |Fabric Client Tags            |fabric_client_tags_api_v1     |1.1.2+5d6761b877    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-dimensions-v1-2.1.54+8005d10d77.jar        |Fabric Dimensions API (v1)    |fabric_dimensions_v1          |2.1.54+8005d10d77   |COMMON_SET|Manifest: NOSIGNATURE
+		Kiwi-1.20.1-Forge-11.10.0.jar                     |Kiwi Library                  |kiwi                          |11.10.0+forge       |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-lighting-mc1.20.1-0.2.0+alpha.12.j|Concurrent Chunk Management En|c2me_threading_lighting       |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		bits_n_bobs-0.0.35.jar                            |Create Bits 'n' Bobs          |bits_n_bobs                   |0.0.35              |COMMON_SET|Manifest: NOSIGNATURE
+		fastboot-1.20.x-1.2.jar                           |FastBoot                      |fastboot                      |1.2                 |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-1.0.3+6274ab9d77.jar  |Fabric Model Loading API (v1) |fabric_model_loading_api_v1   |1.0.3+6274ab9d77    |COMMON_SET|Manifest: NOSIGNATURE
+		lithostitched-forge-1.20.1-1.4.11.jar             |Lithostitched                 |lithostitched                 |1.4.11              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.30+561530ec77.jar|Fabric Screen Handler API (v1)|fabric_screen_handler_api_v1  |1.3.30+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		caelus-forge-3.2.0+1.20.1.jar                     |Caelus API                    |caelus                        |3.2.0+1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-v1-3.0.8+66e9a48f77.jar          |Fabric Rendering (v1)         |fabric_rendering_v1           |3.0.8+66e9a48f77    |COMMON_SET|Manifest: NOSIGNATURE
+		PassableFoliage-1.20.1-forge-8.2.1.jar            |Passable Foliage              |passablefoliage               |8.2.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.5.2+b5b2da4177.jar       |Fabric Renderer - Indigo      |fabric_renderer_indigo        |1.5.2+b5b2da4177    |COMMON_SET|Manifest: NOSIGNATURE
+		fastasyncworldsave-1.20.1-2.6.jar                 |fastasyncworldsave mod        |fastasyncworldsave            |1.20.1-2.6          |COMMON_SET|Manifest: NOSIGNATURE
+		ToadLib-1.3.5-1.20.1.jar                          |ToadLib                       |toadlib                       |1.3.5               |COMMON_SET|Manifest: NOSIGNATURE
+		create_magics-2.0.0-1.20.1.jar                    |Create Magics                 |create_magics                 |2.0.0-1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-particles-v1-1.1.2+78e1ecb877.jar          |Fabric Particles (v1)         |fabric_particles_v1           |1.1.2+78e1ecb877    |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.10-universal.jar                |Forge                         |forge                         |47.4.10             |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		Waves-1.20.1-1.6a.jar                             |Waves                         |waves                         |1.6a                |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.1|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-scheduling-mc1.20.1-0.2.0+alpha.12.jar |Concurrent Chunk Management En|c2me_opts_scheduling          |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		create_structures_overhaul-1.3.1-forge-1.20.1.jar |Create: Structures Overhaul   |create_structures_overhaul    |1.3.1               |COMMON_SET|Manifest: NOSIGNATURE
+		emi-1.1.22+1.20.1+forge.jar                       |EMI                           |emi                           |1.1.22+1.20.1+forge |COMMON_SET|Manifest: NOSIGNATURE
+		NonUpdateReloaded-1.0.1-forge.jar                 |NonUpdate Reloaded            |nonupdate_reloaded            |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-base-0.4.31+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.31+ef105b4977   |COMMON_SET|Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.20.1-2.25.1.jar             |Mouse Tweaks                  |mousetweaks                   |2.25.1              |COMMON_SET|Manifest: NOSIGNATURE
+		ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar        |Forge Config Screens          |forgeconfigscreens            |8.0.2               |COMMON_SET|Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		fdlib-1.0.4-1.20.1.jar                            |FDLib                         |fdlib                         |1.0.4               |COMMON_SET|Manifest: NOSIGNATURE
+		does_it_tick-forge-1.1.4-1.20.1.jar               |Does It Tick?                 |does_it_tick                  |1.1.4               |COMMON_SET|Manifest: NOSIGNATURE
+		alltheleaks-1.1.1+1.20.1-forge.jar                |All The Leaks                 |alltheleaks                   |1.1.1+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.11+0e6cb7f777.jar         |Fabric Block API (v1)         |fabric_block_api_v1           |1.0.11+0e6cb7f777   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-2.3.8+9e342fc177|Fabric Resource Conditions API|fabric_resource_conditions_api|2.3.8+9e342fc177    |COMMON_SET|Manifest: NOSIGNATURE
+		kffmod-4.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.12.0              |COMMON_SET|Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.5.jar                   |Flywheel                      |flywheel                      |1.0.5               |COMMON_SET|Manifest: NOSIGNATURE
+		Ponder-Forge-1.20.1-1.0.91.jar                    |Ponder                        |ponder                        |1.0.91              |COMMON_SET|Manifest: NOSIGNATURE
+		Mantle-1.20.1-1.11.95.jar                         |Mantle                        |mantle                        |1.11.95             |COMMON_SET|Manifest: NOSIGNATURE
+		IntegratedDynamics-1.20.1-1.29.8.jar              |IntegratedDynamics            |integrateddynamics            |1.29.8              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.0.12+c9161c2d77.jar    |Fabric Item Group API (v1)    |fabric_item_group_api_v1      |4.0.12+c9161c2d77   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-notickvd-mc1.20.1-0.2.0+alpha.12.jar        |Concurrent Chunk Management En|c2me_notickvd                 |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		Zeta-1.0-31.jar                                   |Zeta                          |zeta                          |1.0-31              |COMMON_SET|Manifest: NOSIGNATURE
+		mna-forge-1.20.1-3.1.11-all.jar                   |Mana and Artifice             |mna                           |3.1.11              |COMMON_SET|Manifest: NOSIGNATURE
+		entityculling-forge-1.9.4-mc1.20.1.jar            |EntityCulling                 |entityculling                 |1.9.4               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-2.3.3+1c0ea72177.jar      |Fabric Registry Sync (v0)     |fabric_registry_sync_v0       |2.3.3+1c0ea72177    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-worldgen-mc1.20.1-0.2.0+alpha.12.j|Concurrent Chunk Management En|c2me_threading_worldgen       |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		appleskin-forge-mc1.20.1-2.5.1.jar                |AppleSkin                     |appleskin                     |2.5.1+mc1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-1.0.21+514a076577.jar        |Fabric Recipe API (v1)        |fabric_recipe_api_v1          |1.0.21+514a076577   |COMMON_SET|Manifest: NOSIGNATURE
+		lootr-forge-1.20-0.7.35.94.jar                    |Lootr                         |lootr                         |0.7.35.94           |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.3+4bd998fa77.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.3+4bd998fa77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.13+4f23bd8477.jar         |Fabric Sound API (v1)         |fabric_sound_api_v1           |1.0.13+4f23bd8477   |COMMON_SET|Manifest: NOSIGNATURE
+		valkyrienskies-120-2.4.1.jar                      |Valkyrien Skies 2             |valkyrienskies                |2.4.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-message-api-v1-5.1.9+52cc178c77.jar        |Fabric Message API (v1)       |fabric_message_api_v1         |5.1.9+52cc178c77    |COMMON_SET|Manifest: NOSIGNATURE
+		cristellib-1.1.6-forge.jar                        |Cristel Lib                   |cristellib                    |1.1.6               |COMMON_SET|Manifest: NOSIGNATURE
+		CyclopsCore-1.20.1-1.21.3.jar                     |Cyclops Core                  |cyclopscore                   |1.21.3              |COMMON_SET|Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.12+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.12             |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.2.1+cf68abbe77.jar       |Fabric Renderer API (v1)      |fabric_renderer_api_v1        |3.2.1+cf68abbe77    |COMMON_SET|Manifest: NOSIGNATURE
+		globalpacks-forge-1.20.1-19.3.7.jar               |Global Packs                  |globalpacks                   |19.3.7              |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.2.jar                   |GeckoLib 4                    |geckolib                      |4.8.2               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-api-v1-2.1.28+4d0bbcfa77.jar          |Fabric Item API (v1)          |fabric_item_api_v1            |2.1.28+4d0bbcfa77   |COMMON_SET|Manifest: NOSIGNATURE
+		Galosphere-1.20.1-1.4.1-Forge.jar                 |Galosphere                    |galosphere                    |1.20.1-1.4.1        |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar    |YUNG's Better Ocean Monuments |betteroceanmonuments          |1.20-Forge-3.0.4    |COMMON_SET|Manifest: NOSIGNATURE
+		eureka-forge-1201-1.6.0-beta.1+59032efd49.jar     |VS Eureka Mod                 |vs_eureka                     |1.6.0-beta.1+59032ef|COMMON_SET|Manifest: NOSIGNATURE
+		XaerosWorldMap_1.39.12_Forge_1.20.jar             |Xaero's World Map             |xaeroworldmap                 |1.39.12             |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.0+30ef839e77    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-math-mc1.20.1-0.2.0+alpha.12.jar       |Concurrent Chunk Management En|c2me_opts_math                |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		Steam_Rails-1.6.14-beta+forge-mc1.20.1.jar        |Create: Steam 'n' Rails       |railways                      |1.6.14-beta+forge-mc|COMMON_SET|Manifest: NOSIGNATURE
+		sodiumoptionsapi-forge-1.0.10-1.20.1.jar          |Sodium Options API            |sodiumoptionsapi              |1.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		melody_forge_1.0.3_MC_1.20.1-1.20.4.jar           |Melody                        |melody                        |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		fzzy_config-0.7.4+1.20.1+forge.jar                |Fzzy Config                   |fzzy_config                   |0.7.4+1.20.1+forge  |COMMON_SET|Manifest: NOSIGNATURE
+		particle_core-0.2.6+1.20.1+forge.jar              |Particle Core                 |particle_core                 |0.2.6+1.20.1+forge  |COMMON_SET|Manifest: NOSIGNATURE
+		absentbydesign-1.20.1-1.9.0.jar                   |Absent By Design Mod          |absentbydesign                |1.9.0               |COMMON_SET|Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		fabric-api-0.92.2+1.11.12+1.20.1.jar              |Forgified Fabric API          |fabric_api                    |0.92.2+1.11.12+1.20.|COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+a|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-content-registries-v0-4.0.11+a670df1e77.jar|Fabric Content Registries (v0)|fabric_content_registries_v0  |4.0.11+a670df1e77   |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumdynamiclights-forge-1.0.10-1.20.1.jar       |Sodium Dynamic Lights         |sodiumdynamiclights           |1.0.9               |COMMON_SET|Manifest: NOSIGNATURE
+		konkrete_forge_1.8.0_MC_1.20-1.20.1.jar           |Konkrete                      |konkrete                      |1.8.0               |COMMON_SET|Manifest: NOSIGNATURE
+		entity_model_features_1.20.1-forge-3.0.7.jar      |Entity Model Features         |entity_model_features         |3.0.7               |COMMON_SET|Manifest: NOSIGNATURE
+		entity_texture_features_1.20.1-forge-7.0.8.jar    |Entity Texture Features       |entity_texture_features       |7.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		CommonCapabilities-1.20.1-2.9.11.jar              |CommonCapabilities            |commoncapabilities            |2.9.11              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.36+67f9824077.jar    |Fabric API Lookup API (v1)    |fabric_api_lookup_api_v1      |1.6.36+67f9824077   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-chunkio-threading-issues-mc1.20.1-0.2.|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-client-uncapvd-mc1.20.1-0.2.0+alpha.12.jar  |Concurrent Chunk Management En|c2me_client_uncapvd           |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		trackwork-1.20.1-1.2.1.jar                        |Trackwork Mod                 |trackwork                     |1.2.1               |COMMON_SET|Manifest: NOSIGNATURE
+		mixintracereforged-forge-1.0.0-1.20.1.jar         |Mixin Trace Reforged          |mixintracereforged            |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		Chunky-1.3.146.jar                                |Chunky                        |chunky                        |1.3.146             |COMMON_SET|Manifest: NOSIGNATURE
+		EBE-1.20-1.20.1-0.9.1B.jar                        |EnlightedBlockEntities        |ebe                           |0.9.1-BETA          |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-forge-9.1.12.jar                     |Architectury                  |architectury                  |9.1.12              |COMMON_SET|Manifest: NOSIGNATURE
+		kelvin-forge-1.20.1-0.4.0+5be6d27555.jar          |Kelvin                        |kelvin                        |1.20.1-0.4.0+5be6d27|COMMON_SET|Manifest: NOSIGNATURE
+		fabric-loot-api-v2-1.2.1+eb28f93e77.jar           |Fabric Loot API (v2)          |fabric_loot_api_v2            |1.2.1+eb28f93e77    |COMMON_SET|Manifest: NOSIGNATURE
+		cupboard-1.20.1-2.7.jar                           |Cupboard utilities            |cupboard                      |1.20.1-2.7          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-networking-api-v1-1.3.11+503a202477.jar    |Fabric Networking API (v1)    |fabric_networking_api_v1      |1.3.11+503a202477   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-rewrites-chunkio-mc1.20.1-0.2.0+alpha.12.jar|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar    |HopoBetterMineshaft           |hopo                          |1.2.2               |COMMON_SET|Manifest: NOSIGNATURE
+		Towns-and-Towers-1.12-Fabric+Forge.jar            |Towns and Towers              |t_and_t                       |0.0NONE             |COMMON_SET|Manifest: NOSIGNATURE
+		letmedespawn-1.20.x-forge-1.5.0.jar               |Let Me Despawn                |letmedespawn                  |1.5.0               |COMMON_SET|Manifest: NOSIGNATURE
+		apotheosis_balance-1.1.3.jar                      |Apotheosis Balance Configurato|apotheosis_balance            |1.1.3               |ERROR     |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.2.22+afab492177.jar  |Fabric Lifecycle Events (v1)  |fabric_lifecycle_events_v1    |2.2.22+afab492177   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-allocs-mc1.20.1-0.2.0+alpha.12.jar     |Concurrent Chunk Management En|c2me_opts_allocs              |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.37+561530ec77.jar   |Fabric Key Binding API (v1)   |fabric_key_binding_api_v1     |1.0.37+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		WWOO-FABRIC+FORGE+QUILT-2.0.0.jar                 |William Wythers Overhauled Ove|wwoo_forge                    |2.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-3.3.5+631c9cd677.jar       |Fabric Transfer API (v1)      |fabric_transfer_api_v1        |3.3.5+631c9cd677    |COMMON_SET|Manifest: NOSIGNATURE
+		copycats-3.0.4+mc.1.20.1-forge.jar                |Create: Copycats+             |copycats                      |3.0.4+mc.1.20.1-forg|COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-0.11.10+bcd08ed377.jar  |Fabric Resource Loader (v0)   |fabric_resource_loader_v0     |0.11.10+bcd08ed377  |COMMON_SET|Manifest: NOSIGNATURE
+		TRender-1.0.10-1.20.1-forge-SNAPSHOT.jar          |TRender                       |trender                       |1.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		magichem-0.5.1.jar                                |MagiChem                      |magichem                      |0.5.1               |COMMON_SET|Manifest: NOSIGNATURE
+		create-1.20.1-6.0.8.jar                           |Create                        |create                        |6.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		clockwork-1.20.1-0.5.2-forge-80cc2f326c.jar       |Clockwork                     |vs_clockwork                  |1.20.1-0.5.2-forge-8|COMMON_SET|Manifest: NOSIGNATURE
+		waystones-forge-1.20.1-14.1.17.jar                |Waystones                     |waystones                     |14.1.17             |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-chunkio-mc1.20.1-0.2.0+alpha.12.ja|Concurrent Chunk Management En|c2me_threading_chunkio        |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-mining-level-api-v1-2.1.50+561530ec77.jar  |Fabric Mining Level API (v1)  |fabric_mining_level_api_v1    |2.1.50+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar   |Distant Horizons              |distanthorizons               |2.4.5-b             |COMMON_SET|Manifest: NOSIGNATURE
+		txnilib-forge-1.0.24-1.20.1.jar                   |TxniLib                       |txnilib                       |1.0.24              |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-chunk-access-mc1.20.1-0.2.0+alpha.12.ja|Concurrent Chunk Management En|c2me_opts_chunk_access        |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-4.3.1+1880499|Fabric Transitive Access Widen|fabric_transitive_access_widen|4.3.1+1880499877    |COMMON_SET|Manifest: NOSIGNATURE
+		reterraforged-0.0.6-forge-1.20.1.jar              |ReTerraForged                 |reterraforged                 |0.0.6               |COMMON_SET|Manifest: NOSIGNATURE
+		TConstruct-1.20.1-3.11.0.148.jar                  |Tinkers' Construct            |tconstruct                    |3.11.0.148          |COMMON_SET|Manifest: NOSIGNATURE
+		arcaneadditions-1.20.1-forge-1.10.0.jar           |Arcane Additions              |arcaneadditions               |1.10.0              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.41+1d0da21e77.jar  |Fabric BlockRenderLayer Regist|fabric_blockrenderlayer_v1    |1.1.41+1d0da21e77   |COMMON_SET|Manifest: NOSIGNATURE
+		mixinsquared-forge-0.3.6-beta.1.jar               |MixinSquared                  |mixinsquared                  |0.3.6-beta.1        |COMMON_SET|Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.2.jar                     |Jade                          |jade                          |11.13.2+forge       |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-server-utils-mc1.20.1-0.2.0+alpha.12.jar    |Concurrent Chunk Management En|c2me_server_utils             |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		chunkactivitytracker-forge-1.0.1-1.20.1.jar       |Chunk Activity Tracker        |chunkactivitytracker          |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		XaeroZoomout-Forge-1.20-1.1.0.jar                 |XaeroZoomout                  |xaerozoomout                  |1.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		create_interactive-1.1.1-beta.4_1.20.1-forge.jar  |Create: Interactive           |create_interactive            |1.1.1-beta.4_1.20.1-|COMMON_SET|Manifest: NOSIGNATURE
+		Quark-4.0-462.jar                                 |Quark                         |quark                         |4.0-462             |COMMON_SET|Manifest: NOSIGNATURE
+		betterchunkloading-1.20.1-5.4.jar                 |betterchunkloading mod        |betterchunkloading            |1.20.1-5.4          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.13+dc36698e77.jar        |Fabric Biome API (v1)         |fabric_biome_api_v1           |13.0.13+dc36698e77  |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-worldgen-general-mc1.20.1-0.2.0+alpha.1|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-chunkio-mc1.20.1-0.2.0+alpha.12.jar    |Concurrent Chunk Management En|c2me_opts_chunkio             |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fancymenu_forge_3.8.1_MC_1.20.1.jar               |FancyMenu                     |fancymenu                     |3.8.1               |COMMON_SET|Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |COMMON_SET|Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar  |YetAnotherConfigLib           |yet_another_config_lib_v3     |3.6.6+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		rrls-4.0.6.1+mc1.20.1-forge.jar                   |Remove Reloading Screen       |rrls                          |4.0.6.1+mc1.20.1-for|COMMON_SET|Manifest: NOSIGNATURE
+		no-telemetry-1.9.0.jar                            |No Telemetry                  |no_telemetry                  |1.9.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-12.3.4+369cb3a477.ja|Fabric Data Generation API (v1|fabric_data_generation_api_v1 |12.3.4+369cb3a477   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.6.2+0d0bd5a777.jar |Fabric Events Interaction (v0)|fabric_events_interaction_v0  |0.6.2+0d0bd5a777    |COMMON_SET|Manifest: NOSIGNATURE
+	Flywheel Backend: flywheel:off
+	Crash Report UUID: ae9437b2-ce87-4c87-876f-f2f9ee943629
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.10

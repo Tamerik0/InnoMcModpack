@@ -1,0 +1,97 @@
+#Multiplier for base Apotheosis values (gems, affixes, effects, etc.)
+#Examples:
+#  1.0 = default values (no change)
+#  0.5 = reduce all values by 50%
+#  2.0 = double all values
+#This affects ONLY base Apotheosis content:
+#  - Gem attribute bonuses (attack speed, damage, armor, etc.)
+#  - Affix attribute values
+#  - Durability bonuses
+#  - Potion effect durations and amplifiers
+#  - All other numerical bonuses from BASE Apotheosis
+#Changes require game restart to take effect.
+#Range: 0.0 ~ 100.0
+apotheosisMultiplier = 1.0
+#Multiplier for ApotheoticAdditions values
+#This is separate from base Apotheosis multiplier!
+#ApotheoticAdditions adds new rarities: Relic, Heirloom, Esoteric
+#and many new gems and affixes with higher values.
+#Examples:
+#  1.0 = default values
+#  0.7 = reduce by 30% (recommended for balance)
+#  0.5 = reduce by 50%
+#This affects ONLY ApotheoticAdditions content.
+#Changes require game restart to take effect.
+#Range: 0.0 ~ 100.0
+additionsMultiplier = 1.0
+#Fallback multiplier used when mod detection fails
+#This is used for any StepFunction calls that can't be traced
+#to either Apotheosis or ApotheoticAdditions.
+#Usually you want this to match apotheosisMultiplier.
+#Range: 0.0 ~ 100.0
+fallbackMultiplier = 1.0
+#Multiplier for quality values in affix loot entries
+#Quality affects:
+#  1. Luck-based selection (higher quality = more likely with luck)
+#  2. Number of affixes that can roll on items
+#Examples:
+#  1.0 = no change (default)
+#  0.5 = reduce quality by 50% (fewer affixes, less luck impact)
+#  0.7 = reduce quality by 30%
+#This is VERY useful for balance - lower quality = simpler items with fewer affixes!
+#Changes require game restart to take effect.
+#Range: 0.0 ~ 100.0
+qualityMultiplier = 1.0
+#Shift min_rarity for all affix loot entries (weapons, armor, etc.)
+#Positive values increase minimum rarity, negative values decrease it.
+#Examples:
+#  0 = no change (default)
+#  -1 = decrease by one rarity level (rare → uncommon)
+#  -2 = decrease by two levels (mythic → rare)
+#  +1 = increase by one level (common → uncommon)
+#Clamped to valid rarity range (won't go below common or above ancient).
+#Changes require game restart to take effect.
+#Range: -10 ~ 10
+minRarityOffset = 0
+#Shift max_rarity for all affix loot entries (weapons, armor, etc.)
+#Positive values increase maximum rarity, negative values decrease it.
+#Examples:
+#  0 = no change (default)
+#  -1 = decrease by one rarity level (mythic → epic)
+#  -2 = decrease by two levels (mythic → rare)
+#  +1 = increase by one level (rare → epic)
+#Clamped to valid rarity range.
+#Changes require game restart to take effect.
+#Range: -10 ~ 10
+maxRarityOffset = 0
+#Enable balancing for attribute bonuses (attack speed, damage, armor, etc.)
+enableAttributeBalance = true
+#Enable balancing for enchantment level bonuses from gems
+enableEnchantmentBalance = true
+#Enable balancing for potion effect bonuses (duration, amplifier, cooldown)
+enablePotionBalance = true
+#Enable balancing for special bonuses (bloody_arrow, leech_block, etc.)
+enableSpecialBalance = true
+#Rounding mode for enchantment levels:
+#  STANDARD - Math.round() standard rounding (1.5 -> 2, 1.4 -> 1)
+#  CEIL_IF_ABOVE_ONE - If result > 1.0, round up to at least 2 (1.05 -> 2)
+#  ALWAYS_CEIL - Always round up (1.1 -> 2)
+#  ALWAYS_FLOOR - Always round down (1.9 -> 1)
+#Allowed Values: STANDARD, CEIL_IF_ABOVE_ONE, ALWAYS_CEIL, ALWAYS_FLOOR
+enchantmentRounding = "ALWAYS_CEIL"
+#Rounding mode for potion effect amplifiers (levels):
+#  STANDARD - Math.round() standard rounding
+#  CEIL_IF_ABOVE_ONE - If result > 1.0, round up to at least 2
+#  ALWAYS_CEIL - Always round up
+#  ALWAYS_FLOOR - Always round down
+#Allowed Values: STANDARD, CEIL_IF_ABOVE_ONE, ALWAYS_CEIL, ALWAYS_FLOOR
+potionRounding = "ALWAYS_CEIL"
+#Enable debug logging to see when values are being multiplied
+#Shows which multiplier is being applied and from which mod.
+#WARNING: Creates a LOT of log messages!
+enableDebugLogging = false
+#Show detailed caller information in debug logs
+#Includes full stack trace analysis.
+#Only works if enableDebugLogging is true.
+showCallerInfo = false
+
