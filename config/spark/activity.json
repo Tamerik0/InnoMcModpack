@@ -2,6 +2,32 @@
   {
     "user": {
       "type": "player",
+      "name": "cosinus_s",
+      "uniqueId": "cc2b4ed7-98ee-42ac-86e0-2336b080c56a"
+    },
+    "time": 1767543084357,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "H:\\Games\\Minecraft\\FreesmInstances\\Innomc\\minecraft\\config\\spark\\profile-2026-01-04_20.11.24.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "cosinus_s",
+      "uniqueId": "cc2b4ed7-98ee-42ac-86e0-2336b080c56a"
+    },
+    "time": 1767475581948,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "H:\\Games\\Minecraft\\FreesmInstances\\1.20.1(1)\\minecraft\\config\\spark\\profile-2026-01-04_01.26.21.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
       "name": "nigga",
       "uniqueId": "f7c5f9d8-d932-441e-9a20-8e3d50f9bd5e"
     },

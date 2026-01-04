@@ -1,0 +1,933 @@
+---- Minecraft Crash Report ----
+// Embeddium instance tainted by mods: [sodiumoptionsapi, oculus]
+// Please do not reach out for Embeddium support without removing these mods first.
+// -------
+// Shall we play a game?
+
+Time: 2026-01-04 01:00:53
+Description: Initializing game
+
+java.lang.RuntimeException: null
+	at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:315) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+	at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Create: Propulsion (createpropulsion) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: Registry entry not present: create:shaft
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.NullPointerException: Registry entry not present: create:shaft
+		at java.util.Objects.requireNonNull(Objects.java:336) ~[?:?] {re:mixin}
+		at com.tterrag.registrate.util.entry.RegistryEntry.get(RegistryEntry.java:114) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at com.simibubi.create.content.decoration.encasing.EncasingRegistry.lambda$addVariantTo$1(EncasingRegistry.java:31) ~[create-1.20.1-6.0.8.jar%23309!/:6.0.8] {re:classloading}
+		at com.tterrag.registrate.builders.Builder.lambda$onRegisterAfter$1(Builder.java:175) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading,re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at com.tterrag.registrate.AbstractRegistrate.onRegisterLate(AbstractRegistrate.java:303) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Create: Copycats+ (copycats) encountered an error during the common_setup event phase
+§7java.lang.RuntimeException: Unexpected error while registering entry copycats:copycat_block to registry ResourceKey[minecraft:root / minecraft:item]
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.RuntimeException: Unexpected error while registering entry copycats:copycat_block to registry ResourceKey[minecraft:root / minecraft:item]
+		at com.tterrag.registrate.AbstractRegistrate.onRegister(AbstractRegistrate.java:286) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Caused by: java.lang.NullPointerException: Registry entry not present: copycats:copycat_block
+		at java.util.Objects.requireNonNull(Objects.java:336) ~[?:?] {re:mixin}
+		at com.tterrag.registrate.util.entry.RegistryEntry.get(RegistryEntry.java:114) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at com.tterrag.registrate.builders.Builder.getEntry(Builder.java:90) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading,re:mixin}
+		at com.tterrag.registrate.builders.BlockBuilder.lambda$item$8(BlockBuilder.java:205) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading,re:mixin}
+		at com.tterrag.registrate.builders.ItemBuilder.createEntry(ItemBuilder.java:268) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading}
+		at com.tterrag.registrate.builders.ItemBuilder.createEntry(ItemBuilder.java:44) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading}
+		at net.minecraftforge.common.util.Lazy$Fast.get(Lazy.java:55) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at com.tterrag.registrate.AbstractRegistrate$Registration.register(AbstractRegistrate.java:149) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:classloading}
+		at com.tterrag.registrate.AbstractRegistrate.onRegister(AbstractRegistrate.java:279) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Mantle (mantle) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: Registry Object not present: tconstruct:greenheart_sign
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.NullPointerException: Registry Object not present: tconstruct:greenheart_sign
+		at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:572) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.forge_registry_lambda.RegistryObjectMixin,pl:mixin:A}
+		at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+		at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?] {}
+		at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+		at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+		at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?] {}
+		at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?] {}
+		at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?] {}
+		at slimeknights.mantle.block.entity.MantleSignBlockEntity.buildSignBlocks(MantleSignBlockEntity.java:41) ~[Mantle-1.20.1-1.11.95.jar%23361!/:1.20.1-1.11.95] {re:classloading}
+		at slimeknights.mantle.Mantle.register(Mantle.java:206) ~[Mantle-1.20.1-1.11.95.jar%23361!/:1.20.1-1.11.95] {re:classloading}
+		at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Waystones (waystones) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: null
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.NullPointerException
+		at java.util.Objects.requireNonNull(Objects.java:209) ~[?:?] {re:mixin}
+		at java.util.ImmutableCollections.listFromTrustedArray(ImmutableCollections.java:213) ~[?:?] {}
+		at java.util.List.of(List.java:886) ~[?:?] {re:mixin}
+		at net.blay09.mods.waystones.worldgen.ModWorldGen.gatherWaystonesOfOrigin(ModWorldGen.java:102) ~[waystones-forge-1.20.1-14.1.17.jar%23398!/:14.1.17] {re:classloading}
+		at net.blay09.mods.waystones.worldgen.ModWorldGen.lambda$initialize$10(ModWorldGen.java:95) ~[waystones-forge-1.20.1-14.1.17.jar%23398!/:14.1.17] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:A}
+		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:328) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.__EventDispatcher_handleEvent_RegisterEvent.invoke(.dynamic) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:B}
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Waystones (waystones) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.block.Block.m_49966_()" because "net.blay09.mods.waystones.block.ModBlocks.waystone" is null
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.block.Block.m_49966_()" because "net.blay09.mods.waystones.block.ModBlocks.waystone" is null
+		at net.blay09.mods.waystones.worldgen.ModWorldGen.lambda$initialize$0(ModWorldGen.java:57) ~[waystones-forge-1.20.1-14.1.17.jar%23398!/:14.1.17] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:A}
+		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:328) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.__EventDispatcher_handleEvent_RegisterEvent.invoke(.dynamic) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:B}
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+	Suppressed: net.minecraftforge.fml.ModLoadingException: Drive-By-Wire Mod (drivebywire) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: Registry entry not present: drivebywire:wire
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:125) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		at net.minecraftforge.fml.ModLoader.lambda$postEventWithWrapInModOrder$33(ModLoader.java:346) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModList.forEachModInOrder(ModList.java:227) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:344) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:337) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:329) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+		at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+		at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+		at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+		at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+	Caused by: java.lang.NullPointerException: Registry entry not present: drivebywire:wire
+		at java.util.Objects.requireNonNull(Objects.java:336) ~[?:?] {re:mixin}
+		at com.tterrag.registrate.util.entry.RegistryEntry.get(RegistryEntry.java:114) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at com.tterrag.registrate.util.entry.ItemProviderEntry.m_5456_(ItemProviderEntry.java:34) ~[Registrate-MC1.20-1.3.3.jar%23612!/:?] {re:mixin,re:classloading}
+		at edn.stratodonut.drivebywire.WireCreativeTabs.lambda$static$1(WireCreativeTabs.java:26) ~[drivebywire-1.20.1-0.1.0.jar%23320!/:1.20.1-0.1.0] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:61) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:A}
+		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.DeferredRegister$EventDispatcher.handleEvent(DeferredRegister.java:328) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+		at net.minecraftforge.registries.__EventDispatcher_handleEvent_RegisterEvent.invoke(.dynamic) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading,pl:eventbus:B}
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%23137!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:121) ~[javafmllanguage-1.20.1-47.4.13.jar%23408!/:?] {}
+		... 42 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mods: NONE
+Stacktrace:
+	at net.minecraftforge.registries.GameData.postRegisterEvents(GameData.java:315) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:mixin,re:classloading,pl:mixin:APP:modernfix-forge.mixins.json:perf.reduce_blockstate_cache_rebuilds.GameDataMixin,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:A}
+	at net.minecraftforge.common.ForgeStatesProvider.lambda$new$4(ForgeStatesProvider.java:25) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.handleInlineTransition(ModLoader.java:217) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:209) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.4.13.jar%23407!/:?] {re:mixin}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:86) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:66) ~[forge-1.20.1-47.4.13-universal.jar%23411!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:459) ~[client-1.20.1-20230612.114412-srg.jar%23406!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+[MixinTraceReforged] Mixins in Stack Trace:
+	net.minecraftforge.registries.GameData:
+		org.embeddedt.modernfix.forge.mixin.perf.reduce_blockstate_cache_rebuilds.GameDataMixin (modernfix-forge.mixins.json)
+		snownee.kiwi.mixin.GameDataMixin (kiwi.mixins.json)
+	net.minecraft.client.Minecraft:
+		com.sonicether.soundphysics.mixin.MinecraftMixin (sound_physics_remastered.mixins.json)
+		net.irisshaders.iris.mixin.MixinMinecraft_PipelineManagement (mixins.oculus.json)
+		org.valkyrienskies.mod.mixin.client.MixinMinecraft (valkyrienskies-common.mixins.json)
+		org.valkyrienskies.clockwork.mixin.content.gravitron.MinecraftAccessor (vs_clockwork-common.mixins.json)
+		dev.nonamecrackers2.simpleclouds.mixin.MixinMinecraft (simpleclouds.mixins.json)
+		net.createmod.ponder.mixin.client.WindowResizeMixin (ponder-common.mixins.json)
+		net.brazier_modding.gdarp.mixin.MinecraftMixin (globalpacks.mixins.json)
+		de.keksuccino.fancymenu.mixin.mixins.common.client.IMixinMinecraft (fancymenu.mixins.json)
+		de.keksuccino.fancymenu.mixin.mixins.common.client.MixinMinecraft (fancymenu.mixins.json)
+		dev.nonamecrackers2.simpleclouds.mixin.vivecraft.MixinMinecraftVRMixin (simpleclouds.mixins.json)
+		traben.entity_model_features.mixin.mixins.MixinResourceReloadStart (entity_model_features.mixins.json)
+		dev.tr7zw.transition.mixin.MinecraftMixin (transition.mixins.json)
+		org.embeddedt.modernfix.common.mixin.feature.remove_telemetry.MinecraftMixin_Telemetry (modernfix-common.mixins.json)
+		dev.architectury.mixin.forge.MixinMinecraft (architectury.mixins.json)
+		net.fabricmc.fabric.mixin.screen.MinecraftClientMixin (fabric-screen-api-v1.mixins.json)
+		net.fabricmc.fabric.mixin.event.interaction.client.MinecraftClientMixin (fabric-events-interaction-v0.client.mixins.json)
+		traben.entity_texture_features.mixin.mixins.reloading.MixinMinecraftClient (entity_texture_features.mixins.json)
+		dev.tr7zw.transition.mixin.EntityRendererMixin (transition.mixins.json)
+		dev.tr7zw.transition.mixin.BlockEntityRenderStateMixin (transition.mixins.json)
+		net.fabricmc.fabric.mixin.registry.sync.client.MinecraftClientMixin (fabric-registry-sync-v0.client.mixins.json)
+		org.violetmoon.quark.mixin.mixins.client.MinecraftMixin (quark.mixins.json)
+		org.embeddedt.modernfix.common.mixin.perf.blast_search_trees.MinecraftMixin (modernfix-common.mixins.json)
+		dev.tr7zw.entityculling.mixin.DebugScreenEntriesAccessor (entityculling.mixins.json)
+		foundationgames.enhancedblockentities.core.mixin.MinecraftMixin (ebe.mixins.json)
+		de.kb1000.notelemetry.mixin.MinecraftClientMixin (no-telemetry-forge.mixins.json)
+		dev.tr7zw.transition.mixin.EntityRenderStateMixin (transition.mixins.json)
+		net.fabricmc.fabric.mixin.networking.client.accessor.MinecraftClientAccessor (fabric-networking-api-v1.client.mixins.json)
+		de.keksuccino.konkrete.mixin.client.MixinMinecraft (konkrete.mixin.json)
+		org.embeddedt.modernfix.common.mixin.bugfix.concurrency.MinecraftMixin (modernfix-common.mixins.json)
+		me.jellysquid.mods.sodium.mixin.core.MinecraftClientMixin (embeddium.mixins.json)
+		org.embeddedt.modernfix.common.mixin.bugfix.world_leaks.MinecraftMixin (modernfix-common.mixins.json)
+		dev.uncandango.alltheleaks.mixin.core.main.MinecraftMixin (alltheleaks.mixins.json)
+		dev.tr7zw.entityculling.mixin.LivingEntityRendererAccessor (entityculling.mixins.json)
+		org.redlance.dima_dencep.mods.rrls.mixins.MinecraftClientMixin (rrls.mixins.json)
+		org.embeddedt.modernfix.forge.mixin.feature.measure_time.MinecraftMixin_Forge (modernfix-forge.mixins.json)
+		org.embeddedt.modernfix.common.mixin.feature.measure_time.MinecraftMixin (modernfix-common.mixins.json)
+		org.embeddedt.modernfix.common.mixin.perf.dedicated_reload_executor.MinecraftMixin (modernfix-common.mixins.json)
+		net.blay09.mods.balm.mixin.MinecraftMixin (balm.mixins.json)
+		dev.emi.emi.mixin.MinecraftClientMixin (emi.mixins.json)
+		dynamic_fps.impl.mixin.MinecraftMixin (dynamic_fps-common.mixins.json)
+		net.fabricmc.fabric.mixin.event.lifecycle.client.MinecraftClientMixin (fabric-lifecycle-events-v1.client.mixins.json)
+		dev.isxander.yacl3.mixin.MinecraftMixin (yacl.mixins.json)
+		toni.sodiumdynamiclights.mixin.MinecraftClientMixin (mixins.sodiumdynamiclights.json)
+		dev.engine_room.flywheel.impl.mixin.MinecraftMixin (flywheel.impl.mixins.json)
+		me.jellysquid.mods.sodium.mixin.core.render.MinecraftAccessor (embeddium.mixins.json)
+		com.railwayteam.railways.mixin.conductor_possession.MixinMinecraft (railways-common.mixins.json)
+		traben.entity_model_features.mixin.mixins.accessor.MinecraftClientAccessor (entity_model_features.mixins.json)
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:Расширенная библиотека API Windows 32:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:Библиотека элементов управления взаимодействия с пользователем:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:API32 криптографии:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		CoreMessaging.dll:Microsoft CoreMessaging Dll:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		CoreUIComponents.dll:Microsoft Core UI Components Dll:10.0.26100.7462:Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.26100.5074 (WinBuild.160101.0800):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:10.0.26100.1150 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:Динамическая библиотека API DNS-клиента:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		GLU32.dll:Библиотека подпрограмм OpenGL:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:API вспомогательного приложения IP:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Библиотека клиента Windows NT BASE API:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Библиотека клиента Windows NT BASE API:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		MSCTF.dll:Серверная библиотека MSCTF:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		Microsoft.Internal.WarpPal.dll
+		MpOav.dll:IOfficeAntiVirus Module:4.18.25110.6 (747f30181b4cd739116f0a6ad3cabef997251d7f):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.26100.1 (WinBuild.160101.0800):Microsoft Corporation
+		NvMemMapStoragex.dll
+		OLEAUT32.dll:OLEAUT32.DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		Oleacc.dll:Active Accessibility Core Component:7.2.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		POWRPROF.dll:DLL модуля поддержки профиля управления питанием:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.26100.1 (WinBuild.160101.0800):Microsoft Corporation
+		Pdh.dll:Модуль поддержки данных производительности Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Библиотека удаленного вызова процедур:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		RTSSHooks64.dll
+		SETUPAPI.dll:Windows Setup API:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Общая библиотека оболочки Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		SspiCli.dll:Security Support Provider Interface:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll:User Mode Power Dependency Coordinator:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		USER32.dll:Многопользовательская библиотека клиента USER API Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.26100.1150 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Службы HTTP Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		WINSTA.dll:Winstation Library:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		WINTRUST.dll:Microsoft Trust Verification APIs:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:32-разрядная библиотека Windows Socket 2.0:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		WSOCK32.dll:Windows Socket 32-Bit DLL:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		WTSAPI32.dll:Windows Remote Desktop Session Host Server SDK APIs:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		apphelp.dll:Клиентская библиотека совместимости приложений:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		awt.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		bcrypt.dll:Библиотека криптографических примитивов Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		cfgmgr32.dll:Configuration Manager DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM для Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		cryptnet.dll:Crypto Network Related API:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		d3d11.dll:Direct3D 11 Runtime:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		dcomp.dll:Microsoft DirectComposition Library:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc.DLL:Служба DHCP-клиента:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc6.DLL:Клиент DHCPv6:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		dinput8.dll:Microsoft DirectInput:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		directxdatabasehelper.dll:DirectXDatabaseHelper:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		drvstore.dll:Driver Store API:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		dwmapi.dll:Интерфейс API диспетчера окон рабочего стола (Майкрософт):10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		dxcore.dll:DXCore:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		dxgi.dll:DirectX Graphics Infrastructure:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		fwpuclnt.dll:API пользовательского режима FWP/IPsec:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		glfw.dll:GLFW 3.4.0 DLL:3.4.0:GLFW
+		icm32.dll:Microsoft Color Management Module (CMM):10.0.26100.2314 (WinBuild.160101.0800):Microsoft Corporation
+		imagehlp.dll:Windows NT Image Helper:10.0.26100.4202 (WinBuild.160101.0800):Microsoft Corporation
+		inputhost.dll:InputHost:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		java.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		javaw.exe:OpenJDK Platform binary:17.0.8.0:Microsoft
+		jemalloc.dll
+		jimage.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		jli.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		jna17937211140763076338.dll:JNA native library:6.1.4:Java(TM) Native Access (JNA)
+		jsvml.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		jvm.dll:OpenJDK 64-Bit server VM:17.0.8.0:Microsoft
+		kernel.appcore.dll:AppModel API Host:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		lwjgl_opengl.dll
+		lwjgl_stb.dll
+		management.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		management_ext.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		msasn1.dll:ASN.1 Runtime APIs:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		mscms.dll:DLL-библиотека системы сопоставления цветов Майкрософт:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Расширение поставщика службы API Microsoft Windows Sockets 2.0:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:Поставщик оболочки совместимости для имен электронной почты:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Маршрутизатор Windows NCrypt:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		nio.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		nlansp_c.dll:NLA Namespace Service Provider DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		ntdll.dll:Системная библиотека NT:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		ntmarta.dll:Поставщик Windows NT MARTA:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		nvapi64.dll:NVIDIA NVAPI Library, Version 576.88 :32.0.15.7688:NVIDIA Corporation
+		nvgpucomp64.dll:NVIDIA GPU Compiler Driver, Version 576.88 :32.0.15.7688:NVIDIA Corporation
+		nvldumdx.dll:NVIDIA Driver Loader, Version 576.88 :32.0.15.7688:NVIDIA Corporation
+		nvoglv64.dll:NVIDIA Compatible OpenGL ICD:32.0.15.7688:NVIDIA Corporation
+		nvppex.dll:NVIDIA Driver, Version 576.88 :32.0.15.7688:NVIDIA Corporation
+		nvspcap64.dll:NVIDIA Game Proxy 8FileVersion  1:11.0.5.420  8Produc:NVIDIA Corporation  L$FileDescriptio
+		nvwgf2umx.dll:NVIDIA D3D10 Driver, Version 576.88 :32.0.15.7688:NVIDIA Corporation
+		ole32.dll:Microsoft OLE для Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		opengl32.dll:OpenGL Client DLL:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:Библиотека объектов производительности системы Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		pfclient.dll:SysMain Client:10.0.26100.4202 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.26100.7171 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.26100.1 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.26100.1 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Библиотека небольших программ оболочки:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		textinputframework.dll:"TextInputFramework.DYNLINK":10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.26100.7019 (WinBuild.160101.0800):Microsoft Corporation
+		uxtheme.dll:Библиотека тем UxTheme (Microsoft):10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		verify.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+		win32u.dll:Win32u:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		windows.staterepositorycore.dll:Windows StateRepository API Core:10.0.26100.7309 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:API хранения Microsoft WinRT:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.26100.1882 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:Библиотека DLL основных типов Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		wldp.dll:Политика блокировки Windows:10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.26100.5074 (WinBuild.160101.0800):Microsoft Corporation
+		wshunix.dll:AF_UNIX Winsock2 Helper DLL:10.0.26100.1 (WinBuild.160101.0800):Microsoft Corporation
+		xinput1_4.dll:API общего контроллера (Майкрософт):10.0.26100.7306 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:OpenJDK Platform binary:17.0.8.0:Microsoft
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:182) ~[minecraft-1.20.1-client.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.13.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) ~[?:?] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:102) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?] {}
+
+[MixinTraceReforged] Mixins in Stack Trace: None found
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.8, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 800158704 bytes (763 MiB) / 1916796928 bytes (1828 MiB) up to 8589934592 bytes (8192 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5700X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.39
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: Parsec Virtual Display Adapter
+	Graphics card #0 vendor: Parsec Cloud, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=0.45.0.0
+	Graphics card #1 name: SudoMaker Virtual Display Adapter
+	Graphics card #1 vendor: SudoMaker
+	Graphics card #1 VRAM (MB): 0.00
+	Graphics card #1 deviceId: unknown
+	Graphics card #1 versionInfo: DriverVersion=0.22.37.632
+	Graphics card #2 name: NVIDIA GeForce RTX 2070
+	Graphics card #2 vendor: NVIDIA (0x10de)
+	Graphics card #2 VRAM (MB): 4095.00
+	Graphics card #2 deviceId: 0x1f07
+	Graphics card #2 versionInfo: DriverVersion=32.0.15.7688
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 57073.26
+	Virtual memory used (MB): 30434.39
+	Swap memory total (MB): 24384.00
+	Swap memory used (MB): 162.41
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx8192m
+	Launched Version: 1.20.1
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: NVIDIA GeForce RTX 2070/PCIe/SSE2 GL version 4.6.0 NVIDIA 576.88, NVIDIA Corporation
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 16x AMD Ryzen 7 5700X 8-Core Processor 
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.13.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.12.0
+		javafml@null
+		__fabric_loader_bootstrap@2.6.0+0.15.0+1.20.1
+		lowcodefml@null
+	Mod List: 
+		c2meF-fixes-worldgen-threading-issues-mc1.20.1-0.2|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		almanac-1.20.x-forge-1.0.2.jar                    |Almanac                       |almanac                       |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-rewrites-chunk-serializer-mc1.20.1-0.2.0+alp|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		IntegratedTerminals-1.20.1-1.6.15.jar             |IntegratedTerminals           |integratedterminals           |1.6.15              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.0.28+4ac5e37a77.jar  |Fabric Rendering Fluids (v1)  |fabric_rendering_fluids_v1    |3.0.28+4ac5e37a77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-models-v0-0.4.2+7c3892a477.jar             |Fabric Models (v0)            |fabric_models_v0              |0.4.2+7c3892a477    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-general-threading-issues-mc1.20.1-0.2.|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-1.5.5+fa3d1c0177.jar    |Fabric Convention Tags        |fabric_convention_tags_v1     |1.5.5+fa3d1c0177    |COMMON_SET|Manifest: NOSIGNATURE
+		CTM-1.20.1-1.1.10.jar                             |ConnectedTexturesMod          |ctm                           |1.20.1-1.1.10       |COMMON_SET|Manifest: NOSIGNATURE
+		modernfix-forge-5.25.2+mc1.20.1.jar               |ModernFix                     |modernfix                     |5.25.2+mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v1-1.2.34+f71b366f77.jar       |Fabric Command API (v1)       |fabric_command_api_v1         |1.2.34+f71b366f77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.1+0767707077.jar     |Fabric BlockView API (v2)     |fabric_block_view_api_v2      |1.0.1+0767707077    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.13+561530ec77.jar       |Fabric Command API (v2)       |fabric_command_api_v2         |2.2.13+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		YungsApi-1.20-Forge-4.0.6.jar                     |YUNG's API                    |yungsapi                      |1.20-Forge-4.0.6    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-0.2.0+alpha.12-all.jar                      |Concurrent Chunk Management En|c2me                          |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		Apotheosis-1.20.1-7.4.8.jar                       |Apotheosis                    |apotheosis                    |7.4.8               |COMMON_SET|Manifest: NOSIGNATURE
+		fdbosses-2.0.8-1.20.1.jar                         |Qliphoth Awakening            |fdbosses                      |2.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.37-all.jar                  |Balm                          |balm                          |7.3.37              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.8+45a670a577.jar         |Fabric Screen API (v1)        |fabric_screen_api_v1          |2.0.8+45a670a577    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-base-mc1.20.1-0.2.0+alpha.12.jar            |Concurrent Chunk Management En|c2me_base                     |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar  |YUNG's Better Nether Fortresse|betterfortresses              |1.20-Forge-2.0.6    |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |COMMON_SET|Manifest: NOSIGNATURE
+		sound-physics-remastered-forge-1.20.1-1.5.1.jar   |Sound Physics Remastered      |sound_physics_remastered      |1.20.1-1.5.1        |COMMON_SET|Manifest: NOSIGNATURE
+		embeddium-0.3.31+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.31+mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		mna_attrib_apoth-0.5-1.20.1.jar                   |Mana and Artifice Apotheosis C|mna_attrib_apoth              |0.5-1.20.1          |COMMON_SET|Manifest: NOSIGNATURE
+		corpse-forge-1.20.1-1.0.23.jar                    |Corpse                        |corpse                        |1.20.1-1.0.23       |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.40+683d4da877.jar     |Fabric Game Rule API (v1)     |fabric_game_rule_api_v1       |1.0.40+683d4da877   |COMMON_SET|Manifest: NOSIGNATURE
+		improved-village-placement-1.1.1.jar              |Improved Village Placement    |improved_village_placement    |1.1.2               |COMMON_SET|Manifest: NOSIGNATURE
+		resourcefulconfig-forge-1.20.1-2.1.3.jar          |Resourcefulconfig             |resourcefulconfig             |2.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		spark-1.10.53-forge.jar                           |spark                         |spark                         |1.10.53             |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		oculus-mc1.20.1-1.8.0.jar                         |Oculus                        |oculus                        |1.8.0               |COMMON_SET|Manifest: NOSIGNATURE
+		ApothicAttributes-1.20.1-1.3.7.jar                |Apothic Attributes            |attributeslib                 |1.3.7               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.0+4ca7515277.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.0+4ca7515277    |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumoptionsmodcompat-forge-1.0.0-1.20.1.jar     |Sodium Options Mod Compat     |sodiumoptionsmodcompat        |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		emiffect-forge-1.1.2+mc1.20.1.jar                 |EMIffect                      |emiffect                      |1.1.2+mc1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		conditional-mixin-forge-0.6.4.jar                 |conditional mixin             |conditional_mixin             |0.6.4               |COMMON_SET|Manifest: NOSIGNATURE
+		ApothicCurios-1.20.1-1.0.3e.jar                   |Apothic Curios                |apothiccurios                 |1.0.3e              |COMMON_SET|Manifest: NOSIGNATURE
+		TRansition-1.0.11-1.20.1-forge-SNAPSHOT.jar       |TRansition                    |transition                    |1.0.11              |COMMON_SET|Manifest: NOSIGNATURE
+		flib-1.20.1-0.0.14.jar                            |flib                          |flib                          |0.0.14              |COMMON_SET|Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		dynamic-fps-3.9.5+minecraft-1.20.0-forge.jar      |Dynamic FPS                   |dynamic_fps                   |3.9.5               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.37+a6081af|Fabric Rendering Data Attachme|fabric_rendering_data_attachme|0.3.37+a6081afc77   |COMMON_SET|Manifest: NOSIGNATURE
+		JadeAddons-1.20.1-Forge-5.5.0.jar                 |Jade Addons                   |jadeaddons                    |5.5.0+forge         |COMMON_SET|Manifest: NOSIGNATURE
+		sparsestructures-forge-1.20.1-3.0.jar             |SparseStructures              |sparsestructures              |3.0                 |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterJungleTemples-1.20-Forge-2.0.5.jar     |YUNG's Better Jungle Temples  |betterjungletemples           |1.20-Forge-2.0.5    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.2+5d6761b877.jar    |Fabric Client Tags            |fabric_client_tags_api_v1     |1.1.2+5d6761b877    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-dimensions-v1-2.1.54+8005d10d77.jar        |Fabric Dimensions API (v1)    |fabric_dimensions_v1          |2.1.54+8005d10d77   |COMMON_SET|Manifest: NOSIGNATURE
+		Kiwi-1.20.1-Forge-11.10.0.jar                     |Kiwi Library                  |kiwi                          |11.10.0+forge       |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-lighting-mc1.20.1-0.2.0+alpha.12.j|Concurrent Chunk Management En|c2me_threading_lighting       |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		bits_n_bobs-0.0.40.jar                            |Create Bits 'n' Bobs          |bits_n_bobs                   |0.0.40              |COMMON_SET|Manifest: NOSIGNATURE
+		fastboot-1.20.x-1.2.jar                           |FastBoot                      |fastboot                      |1.2                 |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-1.0.3+6274ab9d77.jar  |Fabric Model Loading API (v1) |fabric_model_loading_api_v1   |1.0.3+6274ab9d77    |COMMON_SET|Manifest: NOSIGNATURE
+		lithostitched-forge-1.20.1-1.4.11.jar             |Lithostitched                 |lithostitched                 |1.4.11              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.30+561530ec77.jar|Fabric Screen Handler API (v1)|fabric_screen_handler_api_v1  |1.3.30+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		caelus-forge-3.2.0+1.20.1.jar                     |Caelus API                    |caelus                        |3.2.0+1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-v1-3.0.8+66e9a48f77.jar          |Fabric Rendering (v1)         |fabric_rendering_v1           |3.0.8+66e9a48f77    |COMMON_SET|Manifest: NOSIGNATURE
+		PassableFoliage-1.20.1-forge-8.2.1.jar            |Passable Foliage              |passablefoliage               |8.2.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.5.2+b5b2da4177.jar       |Fabric Renderer - Indigo      |fabric_renderer_indigo        |1.5.2+b5b2da4177    |COMMON_SET|Manifest: NOSIGNATURE
+		fastasyncworldsave-1.20.1-2.6.jar                 |fastasyncworldsave mod        |fastasyncworldsave            |1.20.1-2.6          |COMMON_SET|Manifest: NOSIGNATURE
+		ApotheoticAdditionsV2.2.2.jar                     |Apotheotic Additions          |apotheotic_additions          |2.2.2               |COMMON_SET|Manifest: NOSIGNATURE
+		ToadLib-1.3.5-1.20.1.jar                          |ToadLib                       |toadlib                       |1.3.5               |COMMON_SET|Manifest: NOSIGNATURE
+		corpsecurioscompat-1.20.1-Forge-3.1.3.jar         |corpsecurioscompat            |corpsecurioscompat            |3.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-particles-v1-1.1.2+78e1ecb877.jar          |Fabric Particles (v1)         |fabric_particles_v1           |1.1.2+78e1ecb877    |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.13-universal.jar                |Forge                         |forge                         |47.4.13             |COMMON_SET|Manifest: NOSIGNATURE
+		Waves-1.20.1-1.6a.jar                             |Waves                         |waves                         |1.6a                |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.1|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-scheduling-mc1.20.1-0.2.0+alpha.12.jar |Concurrent Chunk Management En|c2me_opts_scheduling          |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		emi-1.1.22+1.20.1+forge.jar                       |EMI                           |emi                           |1.1.22+1.20.1+forge |COMMON_SET|Manifest: NOSIGNATURE
+		NonUpdateReloaded-1.0.1-forge.jar                 |NonUpdate Reloaded            |nonupdate_reloaded            |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-base-0.4.31+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.31+ef105b4977   |COMMON_SET|Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.20.1-2.25.1.jar             |Mouse Tweaks                  |mousetweaks                   |2.25.1              |COMMON_SET|Manifest: NOSIGNATURE
+		ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar        |Forge Config Screens          |forgeconfigscreens            |8.0.2               |COMMON_SET|Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		fdlib-1.0.4-1.20.1.jar                            |FDLib                         |fdlib                         |1.0.4               |COMMON_SET|Manifest: NOSIGNATURE
+		does_it_tick-forge-1.1.4-1.20.1.jar               |Does It Tick?                 |does_it_tick                  |1.1.4               |COMMON_SET|Manifest: NOSIGNATURE
+		alltheleaks-1.1.1+1.20.1-forge.jar                |All The Leaks                 |alltheleaks                   |1.1.1+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.11+0e6cb7f777.jar         |Fabric Block API (v1)         |fabric_block_api_v1           |1.0.11+0e6cb7f777   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-2.3.8+9e342fc177|Fabric Resource Conditions API|fabric_resource_conditions_api|2.3.8+9e342fc177    |COMMON_SET|Manifest: NOSIGNATURE
+		create_blaze_burner_fuels-1.0.1-forge-1.20.1.jar  |Create: Blaze Burner Fuels    |create_blaze_burner_fuels     |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		kffmod-4.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.12.0              |COMMON_SET|Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.5.jar                   |Flywheel                      |flywheel                      |1.0.5               |COMMON_SET|Manifest: NOSIGNATURE
+		Ponder-Forge-1.20.1-1.0.91.jar                    |Ponder                        |ponder                        |1.0.91              |COMMON_SET|Manifest: NOSIGNATURE
+		Mantle-1.20.1-1.11.95.jar                         |Mantle                        |mantle                        |1.11.95             |COMMON_SET|Manifest: NOSIGNATURE
+		IntegratedDynamics-1.20.1-1.29.10.jar             |IntegratedDynamics            |integrateddynamics            |1.29.10             |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.0.12+c9161c2d77.jar    |Fabric Item Group API (v1)    |fabric_item_group_api_v1      |4.0.12+c9161c2d77   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-notickvd-mc1.20.1-0.2.0+alpha.12.jar        |Concurrent Chunk Management En|c2me_notickvd                 |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		Zeta-1.0-31.jar                                   |Zeta                          |zeta                          |1.0-31              |COMMON_SET|Manifest: NOSIGNATURE
+		mna-forge-1.20.1-3.1.11-all.jar                   |Mana and Artifice             |mna                           |3.1.11              |COMMON_SET|Manifest: NOSIGNATURE
+		entityculling-forge-1.9.5-mc1.20.1.jar            |EntityCulling                 |entityculling                 |1.9.5               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-2.3.3+1c0ea72177.jar      |Fabric Registry Sync (v0)     |fabric_registry_sync_v0       |2.3.3+1c0ea72177    |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-worldgen-mc1.20.1-0.2.0+alpha.12.j|Concurrent Chunk Management En|c2me_threading_worldgen       |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		appleskin-forge-mc1.20.1-2.5.1.jar                |AppleSkin                     |appleskin                     |2.5.1+mc1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-1.0.21+514a076577.jar        |Fabric Recipe API (v1)        |fabric_recipe_api_v1          |1.0.21+514a076577   |COMMON_SET|Manifest: NOSIGNATURE
+		lootr-forge-1.20-0.7.35.94.jar                    |Lootr                         |lootr                         |0.7.35.94           |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.3+4bd998fa77.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.3+4bd998fa77   |COMMON_SET|Manifest: NOSIGNATURE
+		Jade-VS-forge-1.20.1-1.2.3.jar                    |Jade-VS                       |jade_vs                       |1.2.3               |COMMON_SET|Manifest: NOSIGNATURE
+		addonapi-mc1.20.1-1.2.0.jar                       |AddonAPI                      |addonapi                      |1.2.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.13+4f23bd8477.jar         |Fabric Sound API (v1)         |fabric_sound_api_v1           |1.0.13+4f23bd8477   |COMMON_SET|Manifest: NOSIGNATURE
+		valkyrienskies-120-2.4.5.jar                      |Valkyrien Skies 2             |valkyrienskies                |2.4.5               |COMMON_SET|Manifest: NOSIGNATURE
+		emi_ores-1.2+1.20.1+forge.jar                     |EMI Ores                      |emi_ores                      |1.2+1.20.1+forge    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-message-api-v1-5.1.9+52cc178c77.jar        |Fabric Message API (v1)       |fabric_message_api_v1         |5.1.9+52cc178c77    |COMMON_SET|Manifest: NOSIGNATURE
+		cristellib-1.1.6-forge.jar                        |Cristel Lib                   |cristellib                    |1.1.6               |COMMON_SET|Manifest: NOSIGNATURE
+		CyclopsCore-1.20.1-1.21.3.jar                     |Cyclops Core                  |cyclopscore                   |1.21.3              |COMMON_SET|Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.12+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.12             |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.2.1+cf68abbe77.jar       |Fabric Renderer API (v1)      |fabric_renderer_api_v1        |3.2.1+cf68abbe77    |COMMON_SET|Manifest: NOSIGNATURE
+		globalpacks-forge-1.20.1-19.3.7.jar               |Global Packs                  |globalpacks                   |19.3.7              |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.2.jar                   |GeckoLib 4                    |geckolib                      |4.8.2               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-api-v1-2.1.28+4d0bbcfa77.jar          |Fabric Item API (v1)          |fabric_item_api_v1            |2.1.28+4d0bbcfa77   |COMMON_SET|Manifest: NOSIGNATURE
+		Galosphere-1.20.1-1.4.1-Forge.jar                 |Galosphere                    |galosphere                    |1.20.1-1.4.1        |COMMON_SET|Manifest: NOSIGNATURE
+		YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar    |YUNG's Better Ocean Monuments |betteroceanmonuments          |1.20-Forge-3.0.4    |COMMON_SET|Manifest: NOSIGNATURE
+		eureka-forge-1201-1.6.0-beta.1+59032efd49.jar     |VS Eureka Mod                 |vs_eureka                     |1.6.0-beta.1+59032ef|COMMON_SET|Manifest: NOSIGNATURE
+		Placebo-1.20.1-8.6.3.jar                          |Placebo                       |placebo                       |8.6.3               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.0+30ef839e77    |COMMON_SET|Manifest: NOSIGNATURE
+		emitrades-forge-1.2.1+mc1.20.1.jar                |EMI Trades                    |emitrades                     |1.2.1+mc1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-math-mc1.20.1-0.2.0+alpha.12.jar       |Concurrent Chunk Management En|c2me_opts_math                |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		Steam_Rails-1.6.14-beta+forge-mc1.20.1.jar        |Create: Steam 'n' Rails       |railways                      |1.6.14-beta+forge-mc|COMMON_SET|Manifest: NOSIGNATURE
+		sodiumoptionsapi-forge-1.0.10-1.20.1.jar          |Sodium Options API            |sodiumoptionsapi              |1.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		melody_forge_1.0.3_MC_1.20.1-1.20.4.jar           |Melody                        |melody                        |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		baguettelib-1.20.1-Forge-1.1.5.jar                |BaguetteLib                   |baguettelib                   |1.1.5               |COMMON_SET|Manifest: NOSIGNATURE
+		fzzy_config-0.7.4+1.20.1+forge.jar                |Fzzy Config                   |fzzy_config                   |0.7.4+1.20.1+forge  |COMMON_SET|Manifest: NOSIGNATURE
+		particle_core-0.2.6+1.20.1+forge.jar              |Particle Core                 |particle_core                 |0.2.6+1.20.1+forge  |COMMON_SET|Manifest: NOSIGNATURE
+		emi_loot-0.7.8+1.20.1-fix1+forge.jar              |EMI Loot                      |emi_loot                      |0.7.8+1.20.1-fix1+fo|COMMON_SET|Manifest: NOSIGNATURE
+		absentbydesign-1.20.1-1.9.0.jar                   |Absent By Design Mod          |absentbydesign                |1.9.0               |COMMON_SET|Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		fabric-api-0.92.2+1.11.12+1.20.1.jar              |Forgified Fabric API          |fabric_api                    |0.92.2+1.11.12+1.20.|COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+a|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-content-registries-v0-4.0.11+a670df1e77.jar|Fabric Content Registries (v0)|fabric_content_registries_v0  |4.0.11+a670df1e77   |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumdynamiclights-forge-1.0.10-1.20.1.jar       |Sodium Dynamic Lights         |sodiumdynamiclights           |1.0.9               |COMMON_SET|Manifest: NOSIGNATURE
+		konkrete_forge_1.8.0_MC_1.20-1.20.1.jar           |Konkrete                      |konkrete                      |1.8.0               |COMMON_SET|Manifest: NOSIGNATURE
+		create_connected-1.1.10-mc1.20.1-all.jar          |Create: Connected             |create_connected              |1.1.10-mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		entity_model_features_1.20.1-forge-3.0.10.jar     |Entity Model Features         |entity_model_features         |3.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		entity_texture_features_1.20.1-forge-7.0.8.jar    |Entity Texture Features       |entity_texture_features       |7.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		CommonCapabilities-1.20.1-2.9.11.jar              |CommonCapabilities            |commoncapabilities            |2.9.11              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.36+67f9824077.jar    |Fabric API Lookup API (v1)    |fabric_api_lookup_api_v1      |1.6.36+67f9824077   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-fixes-chunkio-threading-issues-mc1.20.1-0.2.|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		endrem_forge-5.3.3-R-1.20.1.jar                   |End Remastered                |endrem                        |5.3.3-R-1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-client-uncapvd-mc1.20.1-0.2.0+alpha.12.jar  |Concurrent Chunk Management En|c2me_client_uncapvd           |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		trackwork-1.20.1-1.2.2.jar                        |Trackwork Mod                 |trackwork                     |1.2.2               |COMMON_SET|Manifest: NOSIGNATURE
+		mixintracereforged-forge-1.0.0-1.20.1.jar         |Mixin Trace Reforged          |mixintracereforged            |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		Chunky-1.3.146.jar                                |Chunky                        |chunky                        |1.3.146             |COMMON_SET|Manifest: NOSIGNATURE
+		Patchouli-1.20.1-84.1-FORGE.jar                   |Patchouli                     |patchouli                     |1.20.1-84.1-FORGE   |COMMON_SET|Manifest: NOSIGNATURE
+		IntegratedTunnels-1.20.1-1.9.3.jar                |IntegratedTunnels             |integratedtunnels             |1.9.3               |COMMON_SET|Manifest: NOSIGNATURE
+		EBE-1.20-1.20.1-0.9.1B.jar                        |EnlightedBlockEntities        |ebe                           |0.9.1-BETA          |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-forge-9.1.12.jar                     |Architectury                  |architectury                  |9.1.12              |COMMON_SET|Manifest: NOSIGNATURE
+		kelvin-forge-1.20.1-0.4.0+ad27706cf1.jar          |Kelvin                        |kelvin                        |1.20.1-0.4.0+ad27706|COMMON_SET|Manifest: NOSIGNATURE
+		cc-tweaked-1.20.1-forge-1.117.0.jar               |CC: Tweaked                   |computercraft                 |1.117.0             |COMMON_SET|Manifest: NOSIGNATURE
+		createpropulsion-0.3.0.jar                        |Create: Propulsion            |createpropulsion              |0.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		cc_vs-1.20.1-forge-0.6.0.jar                      |CC: VS                        |cc_vs                         |1.20.1-forge-0.6.0  |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-loot-api-v2-1.2.1+eb28f93e77.jar           |Fabric Loot API (v2)          |fabric_loot_api_v2            |1.2.1+eb28f93e77    |COMMON_SET|Manifest: NOSIGNATURE
+		cupboard-1.20.1-2.7.jar                           |Cupboard utilities            |cupboard                      |1.20.1-2.7          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-networking-api-v1-1.3.11+503a202477.jar    |Fabric Networking API (v1)    |fabric_networking_api_v1      |1.3.11+503a202477   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-rewrites-chunkio-mc1.20.1-0.2.0+alpha.12.jar|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar    |HopoBetterMineshaft           |hopo                          |1.2.2               |COMMON_SET|Manifest: NOSIGNATURE
+		Towns-and-Towers-1.12-Fabric+Forge.jar            |Towns and Towers              |t_and_t                       |0.0NONE             |COMMON_SET|Manifest: NOSIGNATURE
+		letmedespawn-1.20.x-forge-1.5.0.jar               |Let Me Despawn                |letmedespawn                  |1.5.0               |COMMON_SET|Manifest: NOSIGNATURE
+		apotheosis_balance-1.1.3.jar                      |Apotheosis Balance Configurato|apotheosis_balance            |1.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.2.22+afab492177.jar  |Fabric Lifecycle Events (v1)  |fabric_lifecycle_events_v1    |2.2.22+afab492177   |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-allocs-mc1.20.1-0.2.0+alpha.12.jar     |Concurrent Chunk Management En|c2me_opts_allocs              |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.37+561530ec77.jar   |Fabric Key Binding API (v1)   |fabric_key_binding_api_v1     |1.0.37+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		WWOO-FABRIC+FORGE+QUILT-2.0.0.jar                 |William Wythers Overhauled Ove|wwoo_forge                    |2.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-3.3.5+631c9cd677.jar       |Fabric Transfer API (v1)      |fabric_transfer_api_v1        |3.3.5+631c9cd677    |COMMON_SET|Manifest: NOSIGNATURE
+		toomanyrecipeviewers-0.7.1+mc.20.1.jar            |TooManyRecipeViewers          |toomanyrecipeviewers          |0.7.1+mc.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		copycats-3.0.4+mc.1.20.1-forge.jar                |Create: Copycats+             |copycats                      |3.0.4+mc.1.20.1-forg|COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-0.11.10+bcd08ed377.jar  |Fabric Resource Loader (v0)   |fabric_resource_loader_v0     |0.11.10+bcd08ed377  |COMMON_SET|Manifest: NOSIGNATURE
+		TRender-1.0.10-1.20.1-forge-SNAPSHOT.jar          |TRender                       |trender                       |1.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		create-1.20.1-6.0.8.jar                           |Create                        |create                        |6.0.8               |COMMON_SET|Manifest: NOSIGNATURE
+		vstuff-0.2.4-fix2+015de0da8f.jar                  |vstuff                        |vstuff                        |0.2.4-fix2          |COMMON_SET|Manifest: NOSIGNATURE
+		clockwork-0.5.4.2.jar                             |Clockwork                     |vs_clockwork                  |0.5.4.2             |COMMON_SET|Manifest: NOSIGNATURE
+		waystones-forge-1.20.1-14.1.17.jar                |Waystones                     |waystones                     |14.1.17             |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-threading-chunkio-mc1.20.1-0.2.0+alpha.12.ja|Concurrent Chunk Management En|c2me_threading_chunkio        |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-mining-level-api-v1-2.1.50+561530ec77.jar  |Fabric Mining Level API (v1)  |fabric_mining_level_api_v1    |2.1.50+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		crackerslib-forge-1.20.1-0.4.6.jar                |CrackersLib                   |crackerslib                   |1.20.1-0.4.6        |COMMON_SET|Manifest: NOSIGNATURE
+		simpleclouds-0.7.3+1.20.1-forge-all.jar           |Simple Clouds                 |simpleclouds                  |0.7.3+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar   |Distant Horizons              |distanthorizons               |2.4.5-b             |COMMON_SET|Manifest: NOSIGNATURE
+		txnilib-forge-1.0.24-1.20.1.jar                   |TxniLib                       |txnilib                       |1.0.24              |COMMON_SET|Manifest: NOSIGNATURE
+		drivebywire-1.20.1-0.1.0.jar                      |Drive-By-Wire Mod             |drivebywire                   |0.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-chunk-access-mc1.20.1-0.2.0+alpha.12.ja|Concurrent Chunk Management En|c2me_opts_chunk_access        |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-4.3.1+1880499|Fabric Transitive Access Widen|fabric_transitive_access_widen|4.3.1+1880499877    |COMMON_SET|Manifest: NOSIGNATURE
+		reterraforged-0.0.6-forge-1.20.1.jar              |ReTerraForged                 |reterraforged                 |0.0.6               |COMMON_SET|Manifest: NOSIGNATURE
+		TConstruct-1.20.1-3.11.0.148.jar                  |Tinkers' Construct            |tconstruct                    |3.11.0.148          |COMMON_SET|Manifest: NOSIGNATURE
+		bigcontraptions-1.0.jar                           |Create: Big Contraptions      |bigcontraptions               |1.0                 |COMMON_SET|Manifest: NOSIGNATURE
+		arcaneadditions-1.20.1-forge-1.10.0.jar           |Arcane Additions              |arcaneadditions               |1.10.0              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.41+1d0da21e77.jar  |Fabric BlockRenderLayer Regist|fabric_blockrenderlayer_v1    |1.1.41+1d0da21e77   |COMMON_SET|Manifest: NOSIGNATURE
+		mixinsquared-forge-0.3.6-beta.1.jar               |MixinSquared                  |mixinsquared                  |0.3.6-beta.1        |COMMON_SET|Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.2.jar                     |Jade                          |jade                          |11.13.2+forge       |COMMON_SET|Manifest: NOSIGNATURE
+		oculus_for_simpleclouds-0.1.0.jar                 |Oculus For SimpleClouds       |oculus_for_simpleclouds       |0.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-server-utils-mc1.20.1-0.2.0+alpha.12.jar    |Concurrent Chunk Management En|c2me_server_utils             |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		chunkactivitytracker-forge-1.0.1-1.20.1.jar       |Chunk Activity Tracker        |chunkactivitytracker          |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		Quark-4.0-462.jar                                 |Quark                         |quark                         |4.0-462             |COMMON_SET|Manifest: NOSIGNATURE
+		betterchunkloading-1.20.1-5.4.jar                 |betterchunkloading mod        |betterchunkloading            |1.20.1-5.4          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.13+dc36698e77.jar        |Fabric Biome API (v1)         |fabric_biome_api_v1           |13.0.13+dc36698e77  |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-worldgen-general-mc1.20.1-0.2.0+alpha.1|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		c2meF-opts-chunkio-mc1.20.1-0.2.0+alpha.12.jar    |Concurrent Chunk Management En|c2me_opts_chunkio             |0.2.0+alpha.12      |COMMON_SET|Manifest: NOSIGNATURE
+		fancymenu_forge_3.8.1_MC_1.20.1.jar               |FancyMenu                     |fancymenu                     |3.8.1               |COMMON_SET|Manifest: NOSIGNATURE
+		emi_enchanting-0.1.2+1.20.1+forge.jar             |EMI Enchanting                |emi_enchanting                |0.1.2+1.20.1+forge  |COMMON_SET|Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |COMMON_SET|Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar  |YetAnotherConfigLib           |yet_another_config_lib_v3     |3.6.6+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		simplecloudscompat-1.0.0-1.20.1.jar               |Simple Clouds Compat          |simplecloudscompat            |1.0.0-1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		rrls-4.0.6.1+mc1.20.1-forge.jar                   |Remove Reloading Screen       |rrls                          |4.0.6.1+mc1.20.1-for|COMMON_SET|Manifest: NOSIGNATURE
+		no-telemetry-1.9.0.jar                            |No Telemetry                  |no_telemetry                  |1.9.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-12.3.4+369cb3a477.ja|Fabric Data Generation API (v1|fabric_data_generation_api_v1 |12.3.4+369cb3a477   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.6.2+0d0bd5a777.jar |Fabric Events Interaction (v0)|fabric_events_interaction_v0  |0.6.2+0d0bd5a777    |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: ab3b05ab-3cb6-402f-9e70-83f39e6f344e
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.13
+	Flywheel Backend: flywheel:off
+	Kiwi Modules: 
+		kiwi:contributors
+		kiwi:data
+		passablefoliage:core
+		passablefoliage:enchantment

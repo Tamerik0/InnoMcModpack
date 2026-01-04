@@ -1,0 +1,29 @@
+
+[Thruster]
+	#Particle additional velocity modifier when ship is moving in the same direction as exhaust.
+	"Particle velocity offset" = 0.15
+	#The higher this number is - the more particles are spawned.
+	"Particle count multiplier" = 1.0
+
+[Propeller]
+	#Should fast-rotating propeller blades be blurred. Disable this if you experience visual issues with fast-rotating propellers
+	"Enable blur" = true
+	#Maximum amount of blurred models rendered. Decrease this value if your fps drops when near a lot of propellers.
+	"Max blur instances" = 64
+	#How slow propeller blades start to become blurry
+	"Sample rate" = 2.0
+	#Distance at which propllers no longer blur
+	LOD = 128.0
+	#Simulated exposure time. Set to 1/120 by default
+	"Exposure time" = 0.008333333333333333
+	#Angle of the propeller's blade, in degrees
+	"Blade angle" = 10.0
+
+["Stirling Engine"]
+	#STIRLING_REVOLUTION_PERIOD.
+	STIRLING_REVOLUTION_PERIOD = 0.2
+	#STIRLING_CRANK_RADIUS.
+	STIRLING_CRANK_RADIUS = 0.125
+	#STIRLING_CONROD_LENGTH.
+	STIRLING_CONROD_LENGTH = 0.5
+

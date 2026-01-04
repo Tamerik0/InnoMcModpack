@@ -1,0 +1,38 @@
+filename = "Os' Colorful Grasses (Mix).zip"
+name = "Os' Colorful Grasses"
+side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [
+    '1.20.6',
+    '1.21',
+    '1.21-Snapshot',
+    '1.21.1',
+    '1.21.1-Snapshot',
+    '1.21.10',
+    '1.21.11-snapshot',
+    '1.21.2',
+    '1.21.2-Snapshot',
+    '1.21.3',
+    '1.21.4',
+    '1.21.4-Snapshot',
+    '1.21.5',
+    '1.21.5-Snapshot',
+    '1.21.6',
+    '1.21.6-snapshot',
+    '1.21.7',
+    '1.21.8',
+    '1.21.9',
+    '1.21.9-snapshot'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "Os' Colorful Grasses (Mix).zip"
+
+[download]
+hash = 'b01bc0cc7ec15c9ae3e90eecda704bcc419c3482'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7025891
+project-id = 1352395

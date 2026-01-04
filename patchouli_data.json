@@ -14,7 +14,8 @@
         "apotheosis:adventure/affix_loot/affixes",
         "apotheosis:adventure/bosses/boss_dungeons",
         "apotheosis:adventure/bosses/surface_bosses",
-        "apotheosis:adventure/bosses/boss_items"
+        "apotheosis:adventure/bosses/boss_items",
+        "apotheosis:adventure/attributes/armor_pierce"
       ],
       "bookmarks": [],
       "completedManualQuests": []
