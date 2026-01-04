@@ -51,6 +51,7 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+<<<<<<< HEAD
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -61,6 +62,8 @@
     "goggles.detailed": false,
     "placard": true
   },
+=======
+>>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -74,6 +77,15 @@
     "ench": true,
     "spawner": true
   },
+<<<<<<< HEAD
+=======
+  "waystones": {
+    "waystone": true
+  },
+  "corpse": {
+    "corpse": true
+  },
+>>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
   "balm": {
     "jade": true
   },

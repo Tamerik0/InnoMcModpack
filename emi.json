@@ -5,6 +5,7 @@
     }
   ],
   "lookup_history": [
+<<<<<<< HEAD
     "item:quark:trowel",
     "item:createoreexcavation:drilling_machine",
     "item:createoreexcavation:netherite_drill",
@@ -44,6 +45,9 @@
     },
     "item:tconstruct:broad_axe_head{Material:\"tconstruct:silver\"}",
     "item:create:copper_sheet",
+=======
+    "item:tconstruct:ichor_cake",
+>>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
     "item:integrateddynamics:proto_chorus",
     "item:integrateddynamics:crystalized_chorus_block",
     "item:integrateddynamics:crystalized_chorus_chunk",
