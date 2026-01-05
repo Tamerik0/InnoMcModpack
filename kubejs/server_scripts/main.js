@@ -77,5 +77,45 @@ ServerEvents.recipes(event => {
     ]).heated()
     event.remove({ id: /^integrateddynamics:squeezer\/ore/ })
     event.remove({ id: /^integrateddynamics:mechanical_squeezer\/ore/ })
-
+    event.remove({output: 'vstuff:phys_grabber'})
+    event.recipes.create.mechanical_crafting('vstuff:phys_grabber', [
+    '   SSS',
+    'AEWMWI',
+    'BBBII '
+    ], {
+        W: 'vs_clockwork:wanderlite_matrix',
+        S: 'create:brass_sheet',
+        B: 'create:brass_ingot',
+        A: 'create:andesite_alloy',
+        I: 'tfmg:cast_iron_sheet',
+        E: 'vstuff:energy_core',
+        M: 'mna:purified_vinteum_coated_iron'
+    })
+    event.remove({output: 'vs_clockwork:gravitron'})
+    event.recipes.create.mechanical_crafting('vs_clockwork:gravitron', [
+    'ELD',
+    'RGR',
+    'DBE'
+    ], {
+        G: 'vstuff:phys_grabber',
+        L: 'fdbosses:lightning_core',
+        B: 'tfmg:circuit_board',
+        D: 'integrateddynamics:logic_director',
+        E: 'vstuff:energy_core',
+        R: 'apotheosis:rare_material'
+    })
+    event.recipes.create.mechanical_crafting('the_vmod:physgun', [
+    'ELD',
+    'RGR',
+    'DBE'
+    ], {
+        G: 'vs_clockwork:gravitron',
+        L: 'fdbosses:fire_and_ice_core',
+        B: 'tfmg:circuit_board',
+        D: 'minecraft:nether_star',
+        E: 'mna:superheated_purified_vinteum_ingot',
+        R: 'apotheosis:epic_material'
+    })
+    event.shapeless('vs_clockwork:creative_gravitron', ['the_vmod:physgun', 'computercraft:pocket_computer_normal'])
+    event.shapeless('the_vmod:toolgun', ['vs_clockwork:creative_gravitron', 'computercraft:pocket_computer_advanced', 'apotheosis:mythic_material'])
  })

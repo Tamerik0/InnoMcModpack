@@ -1,0 +1,93 @@
+#Whether or not disassembly is permitted
+allowDisassembly = true
+#How much inertia affects Eureka ships. Max 10 = full inertia
+antiVelocityMassRelevance = 0.8
+#Weight of ballast when highest redstone power
+ballastNoWeight = 1000.0
+#Weight of ballast when lowest redstone power
+ballastWeight = 10000.0
+#The max elevation speed boost gained by having extra extra balloons
+balloonElevationMaxSpeed = 5.5
+#Vertical sensitivity when descending
+baseImpulseDescendRate = 4.0
+#Vertical sensitivity when ascending
+baseImpulseElevationRate = 2.0
+#The speed a ship with no engines can move at
+baseSpeed = 3.0
+#Whether the ship helm assembles diagonally connected blocks or not
+diagonals = true
+#Allow Eureka controlled ships to be affected by fluid drag
+doFluidDrag = false
+#Ascend and descend acceleration
+elevationSnappiness = 1.0
+#Extra engine power for when having multiple engines per engine
+engineBoost = 0.2
+#The final linear boost will be raised to the power of 2, and the result of the delta is multiple by this value
+engineBoostExponentialPower = 1.0E-6
+#At what amount of engines the boost will start taking effect
+engineBoostOffset = 2.5
+#Fuel burn time multiplier
+engineFuelMultiplier = 2.0
+#Avoids consuming fuel when heat is 100%
+engineFuelSaving = false
+#Increases heat gained at low heat level, and increased heat decreases when at high heat and not consuming fuel
+engineHeatChangeExponent = 0.10000000149011612
+#The amount of heat a gain per tick (when burning)
+engineHeatGain = 0.029999999329447746
+#The amount of heat a engine loses per tick
+engineHeatLoss = 0.009999999776482582
+#Increasing this varue will result in more items being able to converted to fuel
+engineMinCapacity = 2000
+#Turning power per engine when heated fully
+enginePowerAngular = 1.0
+#Turning power per engine when minimal heat
+enginePowerAngularMin = 0.0
+#Movement power per engine when heated fully
+enginePowerLinear = 500000.0
+#Movement power per engine with minimal heat
+enginePowerLinearMin = 10000.0
+#Pause fuel consumption and power when block is powered
+engineRedstoneBehaviorPause = false
+#The amount extra that each floater will make the ship float, per kg mass
+floaterBuoyantFactorPerKg = 50000.0
+#Base mass for linear acceleration in Kg.
+linearBaseMass = 50.0
+#Max unscaled speed in m/s without engines.
+linearCasualSpeed = 3.0
+#How fast a ship will stop and accelerate.
+linearMassScaling = 2.0E-4
+#Max smoothing value, will smooth out before reaching max value.
+linearMaxMass = 10000.0
+#How fast a ship will stop. 1 = fast stop, 0 = slow stop
+linearStabilizeMaxAntiVelocity = 1.0
+#Amount of mass in kg a balloon can lift
+massPerBalloon = 5000.0
+#Number of Balloons a single engine can power. 0 disables the feature
+maxBalloonsPerEngine = 0
+#The maximum amount extra each floater will multiply the buoyant force by, irrespective of mass
+maxFloaterBuoyantFactor = 1.0
+#Max reverse speed of a ship with engines
+maxReverseSpeedFromEngines = 8.0
+#Maximum number of blocks allowed in a ship. Set to 0 for no limit
+maxShipBlocks = 32768
+#The maximum distance from center of mass to one end of the ship considered by the turn speed. At it's default of 16, it ensures that really large ships will turn at the same speed as a ship with a center of mass only 16 blocks away from the farthest point in the ship. That way, large ships do not turn painfully slowly
+maxSizeForTurnSpeedPenalty = 16.0
+#Max speed of a ship with engines (actual max speed varies with engines and mass.)
+maxSpeedFromEngines = 16.0
+#Chance for popped balloons to pop adjacent balloons, per side
+popSideBalloonChance = 0.3
+#Stronger stabilization with higher mass, less at higher speeds.
+scaledInstability = 70.0
+#how much the mass decreases the speed.
+speedMassScale = 1.0
+#The speed at which the ship stabilizes
+stabilizationSpeed = 10.0
+#How much torque a ship will apply to try and keep level
+stabilizationTorqueConstant = 15.0
+#The maximum linear acceleration at any point on the ship caused by helm torque
+turnAcceleration = 10.0
+#The maximum linear velocity at any point on the ship caused by helm torque
+turnSpeed = 3.0
+#Less stabilization at higher speed.
+unscaledInstability = 0.1
+
