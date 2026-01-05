@@ -1,58 +1,16 @@
 {
-  "favorites": [
-    {
-      "stack": "item:createoreexcavation:drilling_machine"
-    }
-  ],
+  "favorites": [],
   "lookup_history": [
-<<<<<<< HEAD
-    "item:quark:trowel",
-    "item:createoreexcavation:drilling_machine",
-    "item:createoreexcavation:netherite_drill",
-    "item:createoreexcavation:diamond_drill",
-    "item:createoreexcavation:drill",
-    "item:cc_recrafted:pcb_base",
-    "item:computercraft:wired_modem",
-    "item:toms_peripherals:redstone_port",
-    "item:toms_peripherals:laser_pointer",
-    "item:toms_peripherals:gpu_chip",
-    "item:toms_peripherals:gpu_chip_raw",
-    "item:cc_recrafted:computer_board",
-    "item:cc_recrafted:power_supply",
-    "item:cc_recrafted:processor",
-    "item:cc_recrafted:internal_circuit",
-    "item:tconstruct:blazewood",
-    "item:tconstruct:repair_kit{Material:\"tconstruct:blazewood\"}",
-    "item:railways:track_cherry",
-    "item:railways:track_cherry_wide",
-    "item:computercraft:printer",
-    "item:computercraft:speaker",
-    "item:computercraft:disk{Color:15040472}",
-    "item:computercraft:computer_advanced",
-    "item:computercraft:computer_normal",
-    "item:computercraft:cable",
-    "item:vstuff:phys_pulley",
-    "item:vstuff:phys_grabber{Damage:0}",
-    "item:minecraft:coal",
-    "item:create_blaze_burner_fuels:fiery_coal",
-    "item:create_blaze_burner_fuels:inactive_blaze_core",
-    "item:create_blaze_burner_fuels:blaze_core",
-    "item:create_blaze_burner_fuels:superheated_blaze_core",
-    {
-      "type": "fluid",
-      "id": "tconstruct:molten_silver",
-      "amount": 720
-    },
-    "item:tconstruct:broad_axe_head{Material:\"tconstruct:silver\"}",
-    "item:create:copper_sheet",
-=======
-    "item:tconstruct:ichor_cake",
->>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
-    "item:integrateddynamics:proto_chorus",
-    "item:integrateddynamics:crystalized_chorus_block",
-    "item:integrateddynamics:crystalized_chorus_chunk",
-    "item:integrateddynamics:logic_director",
-    "item:mna:stone_rune_cyan{}"
+    "item:vschunkloader:chunk_loader_weak",
+    "item:vschunkloader:chunk_loader",
+    "item:create_connected:copycat_stairs",
+    "item:mna:pylon/elytra_flight",
+    "item:minecraft:elytra{Damage:0}",
+    "item:tconstruct:slime_chestplate{Damage:0,tic_broken:0b,tic_modifiers:[{level:1,name:\"tconstruct:overslime_friend\"},{level:1,name:\"tconstruct:wings\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:durability\":672.0f},tic_volatile_data:{abilities:1,\"tconstruct:elyta\":1b,upgrades:5}}",
+    "item:mna:spectral_elytra",
+    "item:vstuff:energy_core",
+    "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mna:returning\",lvl:1s}]}",
+    "item:vstuff:empty_energy_core"
   ],
   "craft_history": [],
   "recipe_defaults": {

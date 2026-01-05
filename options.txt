@@ -43,7 +43,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["mod_resources","vanilla","fabric","file/Os\u0027 Colorful Grasses (Mix).zip","file/Cubic Leaves 2.3 (performance).zip","file/Immersive Celestials.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip","file/Jappafied Storage Drawers  -1.21.zip","file/Better Tinker Table 1.18.zip","default_seamless"]
+resourcePacks:["mod_resources","vanilla","fabric","file/Cubic Leaves 2.3 (performance).zip","file/Immersive Celestials.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip","file/Jappafied Storage Drawers  -1.21.zip","file/Better Tinker Table 1.18.zip","default_seamless"]
 incompatibleResourcePacks:["file/Os\u0027 Colorful Grasses (Mix).zip","file/Cubic Leaves 2.3 (performance).zip","file/Immersive Celestials.zip","file/Jappafied Storage Drawers  -1.21.zip","file/Better Tinker Table 1.18.zip"]
 lastServer:
 lang:en_us
@@ -54,7 +54,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -76,7 +76,7 @@ glDebugVerbosity:1
 skipMultiplayerWarning:false
 skipRealms32bitWarning:false
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 hideBundleTutorial:false
 syncChunkWrites:true
 showAutosaveIndicator:true
@@ -136,7 +136,6 @@ key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.dynamic_fps.toggle_forced:key.keyboard.unknown
 key_key.dynamic_fps.toggle_disabled:key.keyboard.unknown
-key_waves.key.draw_shore_map:key.keyboard.unknown
 key_fdlib.key.end_cutscene:key.keyboard.j
 key_key.ponder.ponder:key.keyboard.w
 key_key.integrateddynamics.logic_programmer_focus_search:key.keyboard.f:ALT
@@ -149,8 +148,6 @@ key_key.cast-hand-slot:key.keyboard.unknown
 key_key.cast-belt-slot:key.keyboard.unknown
 key_key.cast-back-slot:key.keyboard.unknown
 key_key.cast-any-slot:key.keyboard.c
-key_key.valkyrienskies.ship_down:key.keyboard.v
-key_key.valkyrienskies.ship_cruise:key.keyboard.c
 key_placebo.toggleTrails:key.keyboard.keypad.9
 key_placebo.toggleWings:key.keyboard.keypad.8
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
@@ -164,6 +161,13 @@ key_keyinfo.copycats.fill_copycat:key.keyboard.left.alt
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.rotate_menu:key.keyboard.unknown
+key_petrolpark.key.tube.build:key.keyboard.enter
+key_petrolpark.key.tube.delete_control_point:key.keyboard.backspace
+key_petrolpark.key.tube.add_control_point_after:key.keyboard.equal
+key_petrolpark.key.tube.add_control_point_before:key.keyboard.minus
+key_petrolpark.key.tube.cancel:key.keyboard.x
+key_key.valkyrienskies.ship_down:key.keyboard.v
+key_key.valkyrienskies.ship_cruise:key.keyboard.c
 key_vstuff.keyinfo.rope_menu_open:key.keyboard.left.alt
 key_key.tconstruct.helmet_interact:key.keyboard.z
 key_key.tconstruct.leggings_interact:key.keyboard.i

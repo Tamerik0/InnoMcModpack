@@ -19,11 +19,7 @@ version = 3
 #  Available variables: is_windows, is_j9vm, is_client, cpus, mem_gb
 # 
 defaultGlobalExecutorParallelismExpression = "default"
-<<<<<<< HEAD
 # (Default: 3) Configures the parallelism of global executor
-=======
-# (Default: 5) Configures the parallelism of global executor
->>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
 globalExecutorParallelism = "default"
 
 [fixes]
@@ -77,22 +73,7 @@ globalExecutorParallelism = "default"
 	# 
 	chunkStreamVersion = "default"
 
-[clientSideConfig]
-
-	[clientSideConfig.modifyMaxVDConfig]
-		# (Default: true) Whether to modify maximum view distance
-		enabled = "default"
-<<<<<<< HEAD
-		# (Default: 54) Max render distance allowed in game options
-=======
-		# (Default: 60) Max render distance allowed in game options
->>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
-		maxViewDistance = "default"
-
 [generalOptimizations]
-	# (Default: true) Whether to let async chunk request no longer block server thread
-	# (may cause incompatibility with other mods)
-	optimizeAsyncChunkRequest = "default"
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  
 	# Mid-tick chunk tasks is to execute chunk tasks during server tick loop  
 	# to speed up chunk loading and generation  
@@ -105,6 +86,9 @@ globalExecutorParallelism = "default"
 	# Incompatible with Dimensional Threading (dimthread)
 	# 
 	midTickChunkTasksInterval = "default"
+	# (Default: true) Whether to let async chunk request no longer block server thread
+	# (may cause incompatibility with other mods)
+	optimizeAsyncChunkRequest = "default"
 
 	[generalOptimizations.autoSave]
 		# (Default: ENHANCED) Defines how auto save should be handled  
@@ -123,11 +107,7 @@ globalExecutorParallelism = "default"
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
 	enabled = "default"
-<<<<<<< HEAD
 	# (Default: 4) No-tick view distance max concurrent chunk loads 
-=======
-	# (Default: 6) No-tick view distance max concurrent chunk loads 
->>>>>>> 7394fbe036150b2a7b01a5fd31f83958d15826da
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 
@@ -151,6 +131,14 @@ globalExecutorParallelism = "default"
 	# (may cause incompatibility with other mods)
 	# 
 	asyncScheduling = "default"
+
+[clientSideConfig]
+
+	[clientSideConfig.modifyMaxVDConfig]
+		# (Default: true) Whether to modify maximum view distance
+		enabled = "default"
+		# (Default: 54) Max render distance allowed in game options
+		maxViewDistance = "default"
 
 [vanillaWorldGenOptimizations]
 	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
