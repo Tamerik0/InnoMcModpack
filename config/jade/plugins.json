@@ -74,20 +74,6 @@
     "ench": true,
     "spawner": true
   },
-<<<<<<< HEAD
-=======
-  "waystones": {
-    "waystone": true
-  },
-  "toms_peripherals": {
-    "modem_info": true,
-    "full_modem_info": true,
-    "wdt_info": true
-  },
-  "corpse": {
-    "corpse": true
-  },
->>>>>>> 4dce056653f8829a14086494bdd53fffef037bb1
   "balm": {
     "jade": true
   },
