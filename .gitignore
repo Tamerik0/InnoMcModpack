@@ -1,3 +1,8 @@
+coremods
+texturepacks
+screenshots
+patchouli_books
+crash-reports
 logs
 saves
 usercache*
@@ -10,3 +15,5 @@ icon.png
 mods/.index
 crash-reports
 emi.json
+authlib-injector*
+pathcouli_data*

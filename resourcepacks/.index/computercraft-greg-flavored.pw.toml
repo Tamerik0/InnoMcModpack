@@ -1,0 +1,17 @@
+filename = 'ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip'
+name = 'ComputerCraft: Greg Flavored'
+side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.19.4', '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6', '1.21' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ComputerCraft Greg Refreshed 1.1'
+
+[download]
+hash = '6d1d3642537c40ea813507379941773a49c62f28'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5560613
+project-id = 1061743

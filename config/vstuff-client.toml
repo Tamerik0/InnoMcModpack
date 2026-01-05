@@ -1,0 +1,5 @@
+
+[rope_client]
+	#Range: 0.01 ~ 1.0
+	thickness = 0.28
+
