@@ -20,3 +20,6 @@ pathcouli_data*
 options.txt
 config/oculus.properties
 config/fabric/indigo-renderer.properties
+Distant_Horizons_server_data
+journeymap
+servers.*
