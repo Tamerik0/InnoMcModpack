@@ -50,7 +50,7 @@
 	// backup location
 	"backup_location": ".",
 	// Specify the backup format. Valid options are ZIP and DIRECTORY
-	"backup_format": "ZIP",
+	"backup_format": "DIRECTORY",
 	// Minimum free disk space in MB. If a backup's creation would leave less than this amount of disk space remaining, the backup will be aborted.
 	"minimum_free_space": 1000,
 	// If the previous backup failed due to lack of space, the oldest backup will be deleted to free space.
