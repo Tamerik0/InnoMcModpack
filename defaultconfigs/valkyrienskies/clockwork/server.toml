@@ -4,10 +4,6 @@ airCompressorHeliumAirDensity = 0.3
 airCompressorMaxPressure = 1000000.0
 #The amount of air (in kg) that the air compressor produces per tick at sea level and 1 rpm
 airCompressorSpeed = 1.0E-4
-angleFollowingAngleErrorMultiplier = 50.0
-#Force multiplier when no rpm is given
-angleFollowingBaseAngleErrorMultiplier = 50.0
-angleFollowingOmegaErrorMultiplier = 50.0
 #Force multiplier for balloons. Realism is 1.0, default is 1000.0. Range: > 0.0
 balloonForceMult = 50.0
 #Whether or not blade controllers consume the durability of the blades inside while rotating at high speeds.
@@ -65,4 +61,8 @@ survivalGravitronMaxRange = 20.0
 survivalGravitronYeetForce = 1000.0
 #Wanderlite blocks exert enough force to lift their own weight, times this multiplier.
 wanderOreForceMultiplier = 2.0
+unlockedModeOmegaErrorMultiplier = 50.0
+#Force multiplier when no rpm is given
+unlockedModeRotationResistanceMultiplier = 1.0
+allowWrenchingActivatedPhysBearing = false
 

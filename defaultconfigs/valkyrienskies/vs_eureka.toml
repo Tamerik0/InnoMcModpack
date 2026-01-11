@@ -1,5 +1,5 @@
 #Whether or not disassembly is permitted
-allowDisassembly = true
+allowDisassembly = false
 #How much inertia affects Eureka ships. Max 10 = full inertia
 antiVelocityMassRelevance = 0.8
 #Weight of ballast when highest redstone power
@@ -12,8 +12,6 @@ balloonElevationMaxSpeed = 5.5
 baseImpulseDescendRate = 4.0
 #Vertical sensitivity when ascending
 baseImpulseElevationRate = 2.0
-#The speed a ship with no engines can move at
-baseSpeed = 3.0
 #Whether the ship helm assembles diagonally connected blocks or not
 diagonals = true
 #Allow Eureka controlled ships to be affected by fluid drag
@@ -48,15 +46,11 @@ enginePowerLinear = 500000.0
 enginePowerLinearMin = 10000.0
 #Pause fuel consumption and power when block is powered
 engineRedstoneBehaviorPause = false
-#The amount extra that each floater will make the ship float, per kg mass
-floaterBuoyantFactorPerKg = 50000.0
 #Base mass for linear acceleration in Kg.
 linearBaseMass = 50.0
-#Max unscaled speed in m/s without engines.
-linearCasualSpeed = 3.0
 #How fast a ship will stop and accelerate.
 linearMassScaling = 2.0E-4
-#Max smoothing value, will smooth out before reaching max value.
+#Max mass for the linear stabilisation, will smooth out before reaching max value.
 linearMaxMass = 10000.0
 #How fast a ship will stop. 1 = fast stop, 0 = slow stop
 linearStabilizeMaxAntiVelocity = 1.0
@@ -90,4 +84,14 @@ turnAcceleration = 10.0
 turnSpeed = 3.0
 #Less stabilization at higher speed.
 unscaledInstability = 0.1
+#Allows ships without a helm (passive ships) to use floaters and balloons
+allowFloatersAndBalloonsOnNonEurekaShips = true
+#How how much force is Kg each floater supports
+floaterBuoyantLift = 2000.0
+#Max unscaled speed in m/s without engines.
+linearBaseSpeed = 3.0
+#The height where balloons effectiveness is zero on ships without a helm
+passiveBalloonMaxHeight = 400.0
+#The height where balloons starts to loose effectiveness on ships without a helm
+passiveBalloonMinHeight = 64.0
 

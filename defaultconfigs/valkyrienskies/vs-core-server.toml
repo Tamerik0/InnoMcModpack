@@ -58,3 +58,15 @@ udpPort = 25565
 	#Enable verbose logging of connectivity (May result in very large log files)
 	verboseConnectivityLogging = false
 
+["Drag Settings"]
+	#The drag coefficient used to represent a solid 1x1x1 cube. This is an exaggerated value by default due to the scale of builds in MC.
+	dragCoefficient = 2.18
+	#A static multiplier applied to drag forces. Useful for when your configured masses are higher/lower than the default.
+	dragMultiplier = 10.0
+	#Enable/Disable Drag on all bodies.
+	enableDrag = true
+	#Enable/Disable Lift on all bodies.
+	enableLift = true
+	#A static multiplier applied to lift forces. Useful for when your configured masses are higher/lower than the default.
+	liftMultiplier = 10.0
+
