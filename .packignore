@@ -36,3 +36,5 @@
 /server-resource-packs
 /resourcepacks/.index
 /shaderpacks/.index
+/config/spark
+/config/VModData/role_data.json

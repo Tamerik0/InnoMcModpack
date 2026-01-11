@@ -36,3 +36,5 @@
 /VMod-Schematics
 /server-resource-packs
 /build
+/config/spark
+/config/VModData/role_data.json
