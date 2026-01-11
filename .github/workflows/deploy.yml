@@ -2,6 +2,15 @@ name: Deploy Server
 
 on:
   workflow_dispatch:
+    inputs:
+      deploy_type:
+        description: 'Deploy Type'
+        required: true
+        default: 'smart'
+        type: choice
+        options:
+        - smart
+        - full
 
 jobs:
   deploy:
@@ -18,13 +27,15 @@ jobs:
     - name: Build Server Pack
       run: python build_pack.py server
 
-    - name: Deploy Server via SFTP
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-      with:
-        server: ${{ secrets.SFTP_HOST }}
-        username: ${{ secrets.SFTP_USERNAME }}
-        password: ${{ secrets.SFTP_PASSWORD }}
-        port: ${{ secrets.SFTP_PORT || 22 }}
-        local_path: 'build/server'
-        remote_path: ${{ vars.SFTP_TARGET_DIR }}
-        sftp_only: true
+    - name: Install dependencies
+      run: pip install paramiko
+
+    - name: Smart Deploy via SFTP
+      env:
+        SFTP_HOST: ${{ secrets.SFTP_HOST }}
+        SFTP_USER: ${{ secrets.SFTP_USERNAME }}
+        SFTP_PASS: ${{ secrets.SFTP_PASSWORD }}
+        SFTP_PORT: ${{ secrets.SFTP_PORT || 22 }}
+        TARGET_DIR: ${{ vars.SFTP_TARGET_DIR }}
+        FORCE_FULL: ${{ github.event.inputs.deploy_type == 'full' }}
+      run: python deploy_smart.py
