@@ -27,6 +27,7 @@ jobs:
         port: ${{ secrets.SFTP_PORT || 22 }}
         local_path: 'build/server'
         remote_path: ${{ vars.SFTP_TARGET_DIR }}
+        sftp_only: true
 
     - name: Update World Server Configs
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
@@ -37,3 +38,4 @@ jobs:
         port: ${{ secrets.SFTP_PORT || 22 }}
         local_path: 'build/server/defaultconfigs'
         remote_path: '${{ vars.SFTP_TARGET_DIR }}/world/serverconfig'
+        sftp_only: true
