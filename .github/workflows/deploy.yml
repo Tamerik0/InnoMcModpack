@@ -19,23 +19,21 @@ jobs:
       run: python build_pack.py server
 
     - name: Deploy Server via SFTP
-      uses: appleboy/scp-action@master
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        host: ${{ secrets.SFTP_HOST }}
+        server: ${{ secrets.SFTP_HOST }}
         username: ${{ secrets.SFTP_USERNAME }}
         password: ${{ secrets.SFTP_PASSWORD }}
         port: ${{ secrets.SFTP_PORT || 22 }}
-        source: "build/server/*"
-        target: ${{ vars.SFTP_TARGET_DIR }}
-        strip_components: 2
+        local_path: 'build/server'
+        remote_path: ${{ vars.SFTP_TARGET_DIR }}
 
     - name: Update World Server Configs
-      uses: appleboy/scp-action@master
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        host: ${{ secrets.SFTP_HOST }}
+        server: ${{ secrets.SFTP_HOST }}
         username: ${{ secrets.SFTP_USERNAME }}
         password: ${{ secrets.SFTP_PASSWORD }}
         port: ${{ secrets.SFTP_PORT || 22 }}
-        source: "build/server/defaultconfigs/*"
-        target: "${{ vars.SFTP_TARGET_DIR }}/world/serverconfig"
-        strip_components: 3
+        local_path: 'build/server/defaultconfigs'
+        remote_path: '${{ vars.SFTP_TARGET_DIR }}/world/serverconfig'
