@@ -1,0 +1,15 @@
+{
+	"type": "mna:manaweaving-recipe",
+	"tier": 2,
+	"output": "innoadditions:uncommon_boss_summoner",
+	"quantity": 1,
+	"items": [
+        "minecraft:skeleton_skull",
+		"minecraft:diamond",
+		"apotheosis:uncommon_material",
+		"mna:arcane_ash"
+	],
+	"patterns": [
+		"mna:circle"	
+	]
+}

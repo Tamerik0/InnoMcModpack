@@ -13,8 +13,6 @@
 /xaero
 /icon.png
 /mods/.index
-/resourcepacks/.index
-/shaderpacks/.index
 /crash-reports
 /emi.json
 /authlib-injector*
@@ -31,8 +29,10 @@
 /.idea
 /config/voicechat/
 /.nl_password
+/.gitignore
 /backups
 /schematics
 /VMod-Schematics
 /server-resource-packs
-/build
+/resourcepacks/.index
+/shaderpacks/.index

@@ -1,0 +1,10 @@
+{
+  "commandAlias": "vote",
+  "configVotes": [
+    {
+      "command": "stop",
+      "alias": "restart",
+      "desc": "restart the server"
+    }
+  ]
+}
