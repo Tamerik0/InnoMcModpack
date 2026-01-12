@@ -38,3 +38,4 @@
 /shaderpacks/.index
 /config/spark
 /config/VModData/role_data.json
+*.py
