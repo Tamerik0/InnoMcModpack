@@ -17,4 +17,5 @@
 	specificResistance = 0.7
 	protections = [0.1, 0.2, 0.3]
 	durations = [100, 100, 60]
+	stepan = ["Goodbye3216"]
 

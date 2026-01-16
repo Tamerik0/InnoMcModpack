@@ -1,0 +1,59 @@
+{
+	"type": "mna:ritual",
+	"tier": 2,
+	"pattern":
+	[
+		[ 0, 0, 0, 4, 0, 0, 0 ],
+		[ 0, 0, 0, 8, 0, 0, 0 ],
+		[ 0, 0, 0, 0, 0, 0, 0 ],
+		[ 3,10, 0,13, 0,11, 5 ],
+		[ 0, 0, 0, 0, 0, 0, 0 ],
+		[ 0, 0, 7, 0, 9, 0, 0 ],
+		[ 0, 2, 0, 0, 0, 1, 0 ]
+	],	
+	"reagents":
+	[
+		"   D   ",
+		"   M   ",
+		"       ",
+		"DM F MD",
+		"       ",
+		"  M M  ",
+		" D   D "
+	],
+	"keys":
+	{
+		"F": 
+		{ 
+			"item": "mna:mote_fire",
+			"optional": false,
+			"consume": true
+		},
+		"D":
+		{
+			"item": "minecraft:diamond",
+			"optional": false,
+			"consume": true
+		},
+        "M":
+        {
+          "item": "apotheosis:uncommon_material",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/triangle",
+		"mna:manaweave_patterns/inverted_triangle",
+		"mna:manaweave_patterns/diamond",
+		"mna:manaweave_patterns/inverted_triangle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x553300",
+		"outerColor": "0xCC0000",
+		"displayIndexes": false,
+		"beamColor": "0x6e0707"
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"type": "mna:ritual",
+	"tier": 2,
+	"pattern":
+	[
+		[23,24,11, 0,13,26,27 ],
+		[22, 0,-1, 0,-1, 0,28 ],
+		[ 0, 0,10, 0,14, 0, 0 ],
+		[ 8, 9, 0,30, 0,15,16 ],
+		[ 0, 0, 3,-1, 4, 0, 0 ],
+		[ 0, 2, 0,19, 0, 5, 0 ],
+		[ 1, 0,20, 0,18, 0, 6 ]
+	],	
+	"reagents":
+	[
+		"B     B",
+		"M     M",
+		"  E E  ",
+		"SM A MS",
+		"   M   ",
+		"   B   ",
+		"       "
+	],
+	"keys":
+	{
+		"B": 
+		{ 
+			"item": "minecraft:book",
+			"optional": false,
+			"consume": true
+		},
+		"E": 
+		{ 
+			"item": "minecraft:emerald",
+			"optional": false,
+			"consume": true
+		},
+		"S": 
+		{ 
+			"item": "mna:spell_book",
+			"optional": false,
+			"consume": true
+		},
+		"A": 
+		{ 
+			"item": "mna:mote_arcane",
+			"optional": false,
+			"consume": true
+		},
+        "M":
+        {
+          "item": "apotheosis:uncommon_material",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/triangle",
+		"mna:manaweave_patterns/square",
+		"mna:manaweave_patterns/circle",
+		"mna:manaweave_patterns/square",
+		"mna:manaweave_patterns/inverted_triangle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"connectBeam": false
+	}
+}

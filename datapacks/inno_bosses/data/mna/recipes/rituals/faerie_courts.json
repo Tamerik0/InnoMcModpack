@@ -1,0 +1,83 @@
+{
+	"type": "mna:ritual",	
+	"tier": 2,
+	"pattern":
+	[
+		[ 0,15,-1,16,-1,17, 0 ],
+		[14,-1,-1,-1,-1,-1,18 ],
+		[13,-1,12,10,20,-1,19 ],
+		[ 0,22, 0, 9, 0, 0,24 ],
+		[ 0, 0, 0, 8, 0, 0,25 ],
+		[ 0, 0, 2, 7, 3, 0, 0 ],
+		[ 0, 1,-1, 5,-1, 4, 0 ]
+	],	
+	"reagents":
+	[
+		" L A L ",
+		"L MMM L",
+		"LMLFLML",
+		"   P   ",
+		"   P   ",
+		"  PPP  ",
+		" D W D "
+	],
+	"keys":
+	{
+		"L": 
+		{ 
+			"item": "minecraft:leaves",
+			"optional": false,
+			"consume": true
+		},
+		"A":
+		{
+			"item": "mna:mote_air",
+			"optional": false,
+			"consume": true
+		},
+		"P":
+		{
+			"item": "minecraft:logs",
+			"optional": false,
+			"consume": true
+		},
+		"D":
+		{
+			"item": "minecraft:dirt",
+			"optional": false,
+			"consume": true
+		},
+		"W":
+		{
+			"item": "mna:mote_water",
+			"optional": false,
+			"consume": true
+		},
+		"F":
+		{
+			"item": "mna:ritual/fey_flowers",
+			"optional": false,
+			"consume": true
+		},
+        "M":
+        {
+          "item": "apotheosis:uncommon_material",
+          "optional": false,
+          "consume": true
+        }
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/triangle",
+		"mna:manaweave_patterns/inverted_triangle",
+		"mna:manaweave_patterns/circle",
+		"mna:manaweave_patterns/inverted_triangle"
+	],
+	"parameters":
+	{
+		"innerColor": "0x00CC00",
+		"outerColor": "0x6600FF",
+		"displayIndexes": false,
+		"beamColor": "0xcc1bc9"
+	}
+}
