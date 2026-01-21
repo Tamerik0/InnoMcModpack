@@ -101,16 +101,16 @@ def main():
     
     try:
         transport = paramiko.Transport((HOST, PORT))
-        transport.set_keepalive(30) # Send keepalive every 30 seconds
+        transport.set_keepalive(15) 
         
-        # Tweak transport settings to avoid MTU/Window hangs on some servers
-        # Reducing window size and packet size can resolve stalls on "put"
-        transport.default_window_size = 1024 * 1024 # Reduce window size (defaults to ~50MB)
-        transport.default_max_packet_size = 32 * 1024 # Enforce 32KB packet limit
+        # Tweak transport settings to avoid MTU/Window hangs on VPNs (like WireGuard)
+        # Using conservative values to prevent packet fragmentation/dropping
+        # MTU is likely ~1420 or lower. We use 1024 bytes per packet to be safe.
+        transport.default_window_size = 8192 # 8KB Window
+        transport.default_max_packet_size = 1024 # 1KB Packet limit (Fits 1420 MTU)
         
         transport.connect(username=USER, password=PASSWORD)
         sftp = paramiko.SFTPClient.from_transport(transport)
-        # sftp.get_channel().settimeout(30.0) # Optional: set timeout on channel
     except Exception as e:
         logger.error(f"Failed to connect: {e}")
         sys.exit(1)
