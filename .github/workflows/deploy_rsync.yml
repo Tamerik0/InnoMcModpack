@@ -1,0 +1,43 @@
+name: Deploy Server (Rsync)
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_type:
+        description: 'Deploy Type'
+        required: true
+        default: 'smart'
+        type: choice
+        options:
+        - smart
+        - full
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Build Server Pack
+      run: python build_pack.py server
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y sshpass rsync
+
+    - name: Deploy via Rsync
+      env:
+        SFTP_HOST: ${{ secrets.SFTP_HOST }}
+        SFTP_USER: ${{ secrets.SFTP_USERNAME }}
+        SFTP_PASS: ${{ secrets.SFTP_PASSWORD }}
+        SFTP_PORT: ${{ secrets.SFTP_PORT || 22 }}
+        TARGET_DIR: ${{ vars.SFTP_TARGET_DIR }}
+        FORCE_FULL: ${{ github.event.inputs.deploy_type == 'full' }} # Not used by rsync script yet but kept for consistency
+      run: python deploy_rsync.py
