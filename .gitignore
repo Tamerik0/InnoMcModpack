@@ -39,4 +39,4 @@
 /config/spark
 /config/VModData/role_data.json
 /server_pack/config/skinrestorer/mojang_profile_cache.json
-
+/.mixin.out
