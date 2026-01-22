@@ -31,6 +31,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y sshpass rsync
+        # Fix for WireGuard/VPN: Set MTU to 1300 to be safe (lower than standard 1500)
+        sudo ip link set dev eth0 mtu 1300
+        ip addr
 
     - name: Deploy via Rsync
       env:

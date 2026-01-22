@@ -113,7 +113,8 @@ def main():
     env['SSHPASS'] = PASSWORD
     
     # Common SSH flags
-    ssh_opts = ["-p", str(PORT), "-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null", "-o", "ConnectTimeout=15"]
+    # -vvv: Verbose debugging for connection issues
+    ssh_opts = ["-p", str(PORT), "-vvv", "-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null", "-o", "ConnectTimeout=15", "-o", "ServerAliveInterval=30"]
     ssh_base_cmd = ["sshpass", "-e", "ssh"] + ssh_opts + [f"{USER}@{HOST}"]
 
     # 1.5 Ensure Remote Directory Exists
