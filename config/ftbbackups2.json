@@ -12,17 +12,17 @@
 	*/
 	"retention_mode": "TIERED",
 	// Applies to retention_mode:MAX_BACKUPS, Sets the maximum number of backups to keep
-	"max_backups": 5,
+	"max_backups": 10,
 	// Applies to retention_mode:TIERED, The latest x number of backups will be retained
-	"keep_latest": 5,
+	"keep_latest": 3,
 	// Applies to retention_mode:TIERED, Sets number of hourly backups to keep
-	"keep_hourly": 1,
+	"keep_hourly": 5,
 	// Applies to retention_mode:TIERED, Sets number of daily backups to keep
-	"keep_daily": 1,
+	"keep_daily": 2,
 	// Applies to retention_mode:TIERED, Sets number of weekly backups to keep
-	"keep_weekly": 1,
+	"keep_weekly": 2,
 	// Applies to retention_mode:TIERED, Sets number of monthly backups to keep
-	"keep_monthly": 0,
+	"keep_monthly": 1,
 	/* This is done with an implementation of cron from the Quartz java library.
 	   More info here
 	   (http://www.cronmaker.com)
@@ -48,7 +48,7 @@
 	// Display file size in backup message
 	"display_file_size": false,
 	// backup location
-	"backup_location": ".",
+	"backup_location": "/mnt/hdd",
 	// Specify the backup format. Valid options are ZIP and DIRECTORY
 	"backup_format": "DIRECTORY",
 	// Minimum free disk space in MB. If a backup's creation would leave less than this amount of disk space remaining, the backup will be aborted.
