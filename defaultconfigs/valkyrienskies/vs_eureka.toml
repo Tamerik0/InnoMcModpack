@@ -65,7 +65,7 @@ maxReverseSpeedFromEngines = 8.0
 #Maximum number of blocks allowed in a ship. Set to 0 for no limit
 maxShipBlocks = 32768
 #The maximum distance from center of mass to one end of the ship considered by the turn speed. At it's default of 16, it ensures that really large ships will turn at the same speed as a ship with a center of mass only 16 blocks away from the farthest point in the ship. That way, large ships do not turn painfully slowly
-maxSizeForTurnSpeedPenalty = 16.0
+maxSizeForTurnSpeedPenalty = 48.0
 #Max speed of a ship with engines (actual max speed varies with engines and mass.)
 maxSpeedFromEngines = 16.0
 #Chance for popped balloons to pop adjacent balloons, per side
