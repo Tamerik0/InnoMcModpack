@@ -4,6 +4,7 @@ import shutil
 import sys
 import argparse
 import fnmatch
+import subprocess
 
 # Configuration
 CLIENT_FILES_IGNORE = '.client_files'
@@ -120,6 +121,30 @@ def merge_tree(src, dst):
         else:
             shutil.copy2(src_path, dst_path)
 
+def run_cmd(cmd_list, cwd=None):
+    """Runs a subprocess command and exits on failure."""
+    print(f"Executing: {' '.join(cmd_list)}")
+    sys.stdout.flush()
+    try:
+        subprocess.run(cmd_list, cwd=cwd, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Command failed with exit code {e.returncode}")
+        sys.exit(e.returncode)
+
+def ensure_git_lfs(root_dir):
+    """Ensures git LFS files are present when building from a git repo."""
+    git_dir = os.path.join(root_dir, '.git')
+    if not os.path.exists(git_dir):
+        return
+
+    if shutil.which('git') is None:
+        print("Error: git is not available in PATH, but this workspace is a git repo.")
+        print("Install git and git-lfs, then re-run the build.")
+        sys.exit(1)
+
+    print("Ensuring git LFS files are present...")
+    run_cmd(['git', 'lfs', 'pull'], cwd=root_dir)
+
 def build_mode(mode, root_dir, output_dir=None):
     if output_dir:
         target_dir = output_dir
@@ -160,6 +185,8 @@ def main():
     args = parser.parse_args()
     
     root_dir = os.getcwd()
+
+    ensure_git_lfs(root_dir)
     
     if args.mode:
         build_mode(args.mode, root_dir, args.output)
